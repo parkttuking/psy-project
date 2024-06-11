@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset	="UTF-8">
+    <title>Q&amp;A</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+  
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/sub.js"></script>
+    <script src="js/gnb.js"></script>
+   
+</head>
+<body>
+<div class="wrap">
+   <header class="sub_header">
+            <h1 class="logo">
+                <a href="index.html"> <img src="images/main_logo.png" alt="한국문화의집 KOUS"></a> 
+            </h1>
+            
+            <nav>
+                <ul class="gnb">
+                    <li class="li01"> 
+						<a href="#">공연</a>
+						<ul class="sub_gnb">
+							<li><a href="#">공연장안내</a></li>
+							<li><a href="#">공연안내</a></li>
+							<li><a href="#">대관신청</a></li>
+						</ul>
+					</li> 
+					
+                    <li class="li02">
+						<a href="#">공예건축학교</a>
+						<ul class="sub_gnb">
+							<li><a href="#">교육안내</a></li>
+							<li><a href="#">과목별소개</a></li>
+							<li><a href="#">수강신청</a></li>
+						</ul>
+					</li>
+					
+                    <li class="li03">
+						<a href="#">문화유산교육</a>
+						<ul class="sub_gnb">
+							<li><a href="#">청소년교육</a></li>
+							<li><a href="#">교사연수</a></li>
+							<li><a href="#">전통문화체험</a></li>
+							<li><a href="#">문화유산 교육단체 지원</a></li>
+							<li><a href="#">교육신청</a></li>
+						</ul>
+					</li>
+					
+                    <li class="li04">
+						<a href="#">알림마당</a>
+						<ul class="sub_gnb">
+							<li><a href="about.html">한국문화의집 소개</a></li>
+							<li><a href="map.html">오시는길</a></li>
+							<li><a href="#">시설안내</a></li>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="boardList.html">Q&amp;A</a></li>
+						</ul>
+					</li>
+                    
+                </ul>
+                
+               <a href="#" class="btn_push">교육공연 알림 서비스</a>
+                
+                
+            </nav><!--nav--> 
+        
+        </header>
+    <div class="content">
+        <div class="sub_top">
+            <div class="sub_top_tit_wrap">
+				<div class="page_nav">
+					<ul>
+						<li><a href="index.html">
+							<img src="images/bread_home.png" alt="home">
+						</a></li>
+						<li>알림마당</li>
+						<li>한국문화의집 소개</li>
+					</ul>
+				</div><!--//page_nav-->
+					
+				<div class="sub_sns_menu">
+					<ul>
+						<li><a href="#">
+							<img src="images/sh_facebook.jpg" alt="facebook">
+						</a></li>
+						
+						<li><a href="#">
+							<img src="images/sh_twitter.jpg" alt="twitter">
+						</a></li>
+						
+						<li><a href="#">
+							<img src="images/sh_print.jpg" alt="print">
+						</a></li>
+						
+					</ul>
+				</div><!--//sub_sns_menu-->
+				
+				<h2><img src="images/sv4_1.jpg" alt="알림마당"></h2>
+				
+			</div><!--//sub_top_tit_wrap-->
+				
+			<div class="sub_top_menu_wrap">
+				<ul>
+					<li><a href="about.html">한국문화의집 소개</a></li>
+					<li><a href="map.html">오시는 길</a></li>
+					<li><a href="#">시설안내</a></li>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="boardList.html" class="on">Q&amp;A</a></li>
+				</ul>
+			</div><!--//sub_top_menu_wrap-->
+			
+        </div><!--//sub_top-->
+            <div class="sub_con"> 
+                <h3>Q&amp;A 등록</h3>
+                <p class="must_txt">*표시는 필수사항 입니다.</p>
+                
+                <form id="boardCreateForm" name="boardCreateForm" action="" method="post">
+                    <table class="wtl" summary="문의구분선택, 제목, 작성자, 작성일, 비밀번호, 내용 등의 내용을 포함한 표">
+                        <caption>Q&amp;A 등록</caption>
+                            <colgroup>
+                                <col width="20%"> <!--html방식으로 적는거-->
+                                <col style="width:80%"> <!--css방식으로 적는거-->
+                            </colgroup>
+                            <tbody>
+                                <tr scope="row">
+                                    <th>
+                                        <span class="essential">*</span>
+                                        문의 구분 선택
+                                    </th>
+                                    <td>
+                                        <select id="" name="" class="">
+                                            <option selected>선택</option>
+                                            <option value="5">교육</option>
+                                            <option value="6">공연</option>
+                                            <option value="7">기타</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr scope="row">
+                                    <th>
+                                        <span class="essential">*</span>
+                                        제목
+                                    </th>
+                                    <td>
+                                        <input type="text" class="subject" maxlength="10">
+                                    </td>
+                                </tr>
+                                <tr scope="row">
+                                    <th>
+                                        <span class="essential">*</span>
+                                        작성자
+                                    </th>
+                                    <td><input type="text" class="w20"></td>
+                                </tr>
+                                <tr scope="row">
+                                    <th>
+                                        <span class="essential">*</span>
+                                        비밀번호
+                                    </th>
+                                    <td>
+                                        <input type="password" class="w20">
+                                        <span class="ex">
+                                            8~20자, 영문, 숫자, 특수문자를 사용하여야 합니다.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr scope="row">
+                                    <th>
+                                        <span class="essential">*</span>
+                                        내용
+                                    </th>
+                                    <td>
+                                        <textarea rows="10" cols="30" maxlength="200"></textarea>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        
+                    </table>
+                    <div class="bnt_wrap">
+                        <a href="#" class="btn_regist btn">등록</a>
+                        <a href="#" class="btn_list btn">목록</a>
+                    </div><!--//bnt_wrap-->
+                </form>            
+            </div><!--//sub_con-->
+        
+     </div><!--//content-->
+     <footer>
+        <p>
+            <span>한국문화재재단</span> 
+            <span>(06180) 서울특별시 강남구 테헤란로 92길 12-9 &#40;대치동944-22&#41; </span>
+            Tel: 02-3011-1788｜Fax: 02-567-6979｜
+            <a href="#">개인정보처리방침</a>
+        </p>
+        <p>
+            <span>Copyringht by 2016 한국문화재재단 All rights Reserved.</span>
+        </p>
+    </footer>
+</div><!--//wrap-->
+</body>
+</html>

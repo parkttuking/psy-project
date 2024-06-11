@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>서울도시가스 Mobile</title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/lnb.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>    
+
+<body style="background-color: #fff">
+    <div class="wrap">
+		<!--Header 영역 시작-->
+		<header>
+			<div class="wrap-menu">
+				<div class="btn_left" onclick="$('.lnb_menu').show();$('.lnb_bg').show();">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div><!--// btn_left -->
+				<div class="title">
+					<h1 class="Logo">서울도시가스 MOBILE</h1>
+				</div><!--// title -->
+			</div>
+		</header>
+		<!--Header 영역 종료-->
+        <ul class="lnb_menu" style="display:none;">
+                   <div class="box">
+                   <div class="lnb_title">
+                       <p>HOME</p>
+                       <a class="btn_close"  onclick="$('.lnb_menu').hide();$('.lnb_bg').hide();"><img alt="닫기" src="IMG/btn_close.png"></a>
+                   </div>
+					<ul class="menu">
+						<li class="menu_li">
+							<a href="#">
+							    <span class="mail">메일</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+                            <ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">미확인 메일</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">받은 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">내부 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">외부 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">알림 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">보낸 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">확인할 메일</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">휴지통</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">폴더</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">메일작성</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="payment">전자결제</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+                            <ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">결제할 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">결제보류 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">결제진행 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">결제완료 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">개인완료함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">휴가원 작성</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="calendar">일정관리</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="address">연락처</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="Bulletin-Board">게시판</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+							<ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">최신게시</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a></a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">경조사</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">경조사&#40;과거&#41;</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">업무게시</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">업무게시&#40;과거&#41;</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">공급량 조회</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">영업마일리지</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="spec">자제사양서</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+							<ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">자재사양서1</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">자재사양서2</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="logout">로그아웃</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+						<li class="menu_li"  onclick="$('.lnb_menu').hide();$('.lnb_bg').hide();">
+							<a href="#">
+							    <span class="close">닫기</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+					</ul>  
+			   </div><!--// box --> 
+		   </ul>
+        <div class="lnb_bg" style="display:none;"></div><!--// lnb_on_bg -->
+        <div class="sub_top">
+            <button class="send">발송</button><!--// send -->
+            <button class="send_Options">발송옵션</button><!--// send_Options -->
+        </div><!--// sub_titlen -->
+        <div class="divWrite_droppableAll">
+            <table class="mailWriteItem">
+                <caption>
+                    <span class="blind">메일 쓰기 옵션</span>
+                </caption>
+                <tbody>
+                    <tr>
+                        <th class="blind"></th>
+                        <td>
+                            <input type="checkbox" name="check1" id="check1" class="checkbox" value="1">
+                            <label for="check1">긴급</label>
+                            <input type="checkbox" name="check2" id="check2" class="checkbox" value="1">
+                            <label for="check2">개별발송</label>
+                            <input type="checkbox" name="check3" id="check3" class="checkbox" value="1">
+                            <label for="check3">영문이름으로 발송</label>
+                            <input type="checkbox" name="check4" id="check4" class="checkbox" value="1">
+                            <label for="check4">예약발송</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>보낸사람</th>
+                        <td>admin/협력사/계약직</td>
+                    </tr>
+                    <tr>
+                        <th>보낸날짜</th>
+                        <td>2018-12-23 오전 09:23:06</td>
+                    </tr>
+                    <tr>
+                        <th>제&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;목</th>
+                        <td>제목입니다.</td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <select>
+                                <option>수신</option>
+                            </select>
+                        </th>
+                        <td>
+                            <input type="text" name="name" id="name" class="name">
+                            <button class="add">추가</button>
+                            <button class="address_book">주소록조회</button>
+                        </td>
+                    </tr>
+                     <tr class="height50">
+                        <th class="blind"></th>
+                        <td class="height50">
+                            <div class="list_addrobj_droppable">
+                                <div class="top_list_addrobj">
+                                    <button class="all_delete">전체삭제</button>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">홍길동</a>
+                                        <a href="#"><img src="IMG/close-1.png"></a>
+                                    </li>
+                                </ul>
+                            </div><!--// list_addrobj_droppable -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="blind"></th>
+                        <td class="width100">
+                            <ul class="file-mail">
+                                <li>
+                                    <a href="#">
+                                        <img src="IMG/file-mail.png">
+                                        업무보고.ppt
+                                    </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table><!--// mailWriteItem -->
+        </div><!--// divWrite _droppableAll -->
+        <div class="mail_con">     
+그거 어디서 났어?
+일반적인 신념과는 달리 Lorem Ipsum은 단순히 임의의 텍스트가 아닙니다. 그것은 기원전 45 년부터의 고대 라틴 문학 작품에 뿌리를두고 있으며, 2000 년이 넘었습니다. 버지니아의 햄든 시드니 (Hampden-Sydney) 대학의 라틴어 교수 인 Richard McClintock은 Lorem Ipsum에서 좀 더 모호한 라틴어 단어 인 consectetur를 찾아 고전 문학에서이 단어의 인용을 통해 의심 할 여지없는 원천을 발견했습니다. Lorem Ipsum은 기원전 45 년에 작성된 Cicero의 "de Finibus Bonorum et Malorum"(1.10.32 절과 1.10.33 절)에서 나온다. 이 책은 르네상스 시대에 매우 인기있는 윤리 이론에 관한 논문입니다. Lorem Ipsum의 첫 번째 라인 인 "Lorem ipsum dolor sitting amet .."는 1.10.32 절의 한 줄에 있습니다.
+       
+그거 어디서 났어?
+일반적인 신념과는 달리 Lorem Ipsum은 단순히 임의의 텍스트가 아닙니다. 그것은 기원전 45 년부터의 고대 라틴 문학 작품에 뿌리를두고 있으며, 2000 년이 넘었습니다. 버지니아의 햄든 시드니 (Hampden-Sydney) 대학의 라틴어 교수 인 Richard McClintock은 Lorem Ipsum에서 좀 더 모호한 라틴어 단어 인 consectetur를 찾아 고전 문학에서이 단어의 인용을 통해 의심 할 여지없는 원천을 발견했습니다. Lorem Ipsum은 기원전 45 년에 작성된 Cicero의 "de Finibus Bonorum et Malorum"(1.10.32 절과 1.10.33 절)에서 나온다. 이 책은 르네상스 시대에 매우 인기있는 윤리 이론에 관한 논문입니다. Lorem Ipsum의 첫 번째 라인 인 "Lorem ipsum dolor sitting amet .."는 1.10.32 절의 한 줄에 있습니다.
+        </div><!--// mail_con -->
+        <div class="bottom_Bar">
+           <div class="inner">
+               <button>발송</button>
+               <button>전체삭제</button>
+               <button>맨위로</button>
+           </div>
+        </div>
+    </div><!--// wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

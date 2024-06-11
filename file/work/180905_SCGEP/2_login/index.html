@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko" style="height: 100%;">
+<head>
+	<meta charset="UTF-8">
+	<title>서울도시가스 Mobile</title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/lnb.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>    
+
+<body style="background-color: #efefef">
+    <div class="login_con_wrap">
+		<div class="login_con">
+            <div class="inner">
+                <h1 class="login_logo"><img src="IMG/login_logo.png"></h1>
+                <div class="login_box">
+                    <input type="text" id="id" name="id" accesskey="L" placeholder="아이디" class="int" maxlength="41" value>
+                    <input type="password" id="pw" placeholder="비밀번호" class="int" maxlength="16">
+                    <div class="login_check">
+                        <span class="login_check_box">
+                            <img src="IMG/Save_Id_off.png">
+                            <button class="login_but">로그인</button>
+                            <p class="login_txtbox"></p><!--// login_txtbox -->
+                        </span>
+                    </div><!--// login_check -->
+                </div><!--// login_box -->
+            </div><!--// inner -->
+		</div><!--// login_con -->
+    </div><!--// wrap -->
+    <script>
+		$(document).ready(function(){
+            var flag=false;
+            $(".login_check_box>img").click(function(){
+                if (flag==false) {
+                    $(".login_check_box>img").attr("src",$(".login_check_box>img").attr("src").replace("_off","_on"));
+					flag=true;
+				}
+				
+				else if(flag==true){ 
+                    $(".login_check_box>img").attr("src",$(".login_check_box>img").attr("src").replace("_on","_off"));
+					flag=false;
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

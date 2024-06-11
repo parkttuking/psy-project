@@ -1,0 +1,829 @@
+@charset "utf-8";
+
+
+/* 블라인드 */
+.blind{
+	overflow: hidden;
+	visibility: hidden;
+	position: absolute;
+	top: 0; left: 0;
+	width: 1px; height: 1px;
+	font-size: 0;
+	line-height: 0;
+	text-indent: -9999px;
+}
+body{background-color: #f5f8f9;}
+header{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; min-width: 1280px; height: 60px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 14px 50px -23px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 14px 50px -23px rgba(0,0,0,0.1);
+    box-shadow: 0px 14px 50px -23px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+header .container{
+    position: relative;
+    float: left; 
+    width: 100%; height: 100%;
+}
+.dwp-gnb{
+    float: left;
+    width: 60px; height: 60px;
+    border-right: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+.dwp-gnb .btn{
+    float: left;
+    z-index: 10;
+    padding: 17px 12px;
+    margin: 0 auto;
+}
+.dwp-gnb .btn .bar1,
+.dwp-gnb .btn .bar2,
+.dwp-gnb .btn .bar3{ 
+    width: 35px; height: 2px; 
+    background-color: #898989; 
+    margin-bottom: 9px;
+    transition: all 0.4s;
+}
+.dwp-gnb .btn .bar3{margin-bottom: 0;}
+.dwp-gnb .on .bar1{ 
+    transform: rotate(-45deg) translate(-8px, 7px);
+}
+.dwp-gnb .on .bar2{
+    opacity: 0;
+}
+.dwp-gnb .on .bar3{
+    transform: rotate(45deg) translate(-7px, -8px);
+}
+.dwp-logo{
+    float: left; 
+    height: 100%; width: 252px;
+    box-sizing: border-box;
+    text-indent: -99999px;
+    margin-left: 21px;
+    background: url(../IMG/dwp-logo.svg) no-repeat center center;
+}
+.dwp-util{
+    float: right;
+    height: 100%; width: 848px;
+}
+.dwp-search{
+    width: 190px; height: 25px;
+    float: left;
+    background-color: #f1f1f1;
+    border-radius: 0.6vw;
+    margin: 17px 18px 17px 0;
+}
+.dwp-search .form{
+    display: inline-block;
+    height: 100%; width: 100%;
+}
+.dwp-search .form input{
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #898989;
+}
+.dwp-search .form button{
+    height: 16px; width: 16px;
+    padding: 4px;
+    background: url(../IMG/dwp-search.svg) transparent no-repeat center center;
+}
+.dwp-workplace{
+    border: 1px solid #898989;
+    float: left; padding: 4px 21px 4px 10px;
+    cursor: pointer;
+    margin: 16px 18px 0 0;
+    background: url(../IMG/dwp-workplace-arrow.svg) transparent no-repeat 93px center;
+    background-size: 6px 11px;
+}
+.dwp-workplace a{
+    color: #898989;
+}
+.dwp-menu{
+    float: left;
+}
+.dwp-menu button{
+    height: 60px; width: 61px;
+    float: left;
+    border-left: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    background: transparent no-repeat center center;
+    background-size: 26px;
+    text-indent: -9999px;
+    position: relative;
+}
+.dwp-menu .dwp-menu-mail{background-image:url(../IMG/dwp-menu-mail.svg);}
+.dwp-menu .dwp-menu-alarm{background-image:url(../IMG/dwp-menu-alarm.svg);}
+.dwp-menu .dwp-menu-doc{background-image:url(../IMG/dwp-menu-doc.svg);}
+.dwp-menu .dwp-menu-apps{background-image:url(../IMG/dwp-menu-apps.svg);}
+.dwp-menu .dwp-menu-setting{background-image:url(../IMG/dwp-menu-setting.svg);}
+
+.dwp-menu button:hover{background-color:#e4e4e4;}
+
+.dwp-icon-wrap>[class*="dwp-menu-"][data-count]:before{
+    content: attr(data-count);
+    display: block;
+    position: absolute;
+    top: 10px; left: 30px;
+    width: 20px; height: 20px;
+    border-radius: 50px;
+    background-color: #008cdb;
+    color: #fff;
+    font-size: 11px;
+    text-indent: 0;
+    text-align: center;
+    line-height: 19px;
+}
+
+.dwp-menu .dwp-profile{
+    height: 60px; width: 197px;
+    float: left;
+    border-left: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    padding: 5px 14px;
+    cursor: pointer;
+}
+
+.dwp-profile a{
+    float: left;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dwp-profile a .dwp-photo{
+    float: left;
+    width: 100%; height: 100%;
+}
+.dwp-profile .dwp-name{
+    float: left;
+    height: 100%;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 12px;
+}
+.dwp-portlet-zone{
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.visual{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.visual img{
+    height: 245px; width: 100%;
+    display: block;
+}
+.visual button{
+    width: 65px; height: 20px;
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background: url(../IMG/blind_img.svg) transparent no-repeat center center;
+    background-color: #008cdb;
+    border-bottom-left-radius:5px; 
+    border-bottom-right-radius: 5px;
+}
+.visual button .show_img{
+    background: url(../IMG/show_img.svg) transparent no-repeat center center;
+}
+.dwp-portlet-con{
+    position: relative;
+    width: 100%; height: 1200px;
+}
+.dwp-portlet-line{
+    width: 410px;
+    box-sizing: border-box;
+}
+.dwp-portlet-line1{
+    position: absolute;
+    top: 0; left: 0;
+}
+.dwp-portlet-line2{
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.dwp-portlet-line3{
+    position: absolute;
+    top: 0; right: 0;
+}
+.dwp-portlet{
+    background-color: #fff;
+    -webkit-box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.2);
+    -moz-box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.2);
+    box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.2);
+    margin-bottom: 20px;
+}
+.dwp-portlet .portlet-head{
+    width: 100%; height: 45px;
+    border-bottom: 1px solid #008cdb;
+    box-sizing: border-box;
+    padding: 14px 14px;
+    font-weight: bold; color: #333;
+    font-size: 16px;
+}
+.dwp-portlet .portlet-head>.btn{
+    float: right;
+}
+.dwp-portlet .portlet-head>.btn a{
+    display: inline-block;
+    width: 17px; height: 17px;
+    margin-left: 10px;
+}
+.portlet-body{
+    padding: 12px 14px;
+    box-sizing: border-box;
+}
+/* 공급량 */
+.dwp-portlet-supply>.portlet-body>ul{
+    overflow: hidden;
+    width: 218px; height: 16px;
+    margin: 0 auto;
+}
+.dwp-portlet-supply>.portlet-body>ul>li{
+    float: left;
+}
+.dwp-portlet-supply>.portlet-body>ul>li>a{
+    display: block;
+    font-size: 16px;
+    color: #898989;
+}
+.dwp-portlet-supply>.portlet-body>ul>li:nth-child(2){padding: 0 9px;}
+.dwp-portlet-supply>.portlet-body>table{
+    width: 383px; height: 143px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.dwp-portlet-supply>.portlet-body>table>tbody>tr{
+    line-height: 30px; width: 100%;
+    color: #898989;
+}
+.dwp-portlet-supply>.portlet-body>table>tbody>tr>th{
+    font-weight: bold;
+}
+.dwp-portlet-supply>.portlet-body>table>tbody>tr:nth-child(1){
+    border-bottom: 1px solid #ddd;
+}
+/* 사내제안 [현황보기] */
+.dwp-portlet-suggest>.portlet-body{}
+.dwp-portlet-suggest>.portlet-body>table{
+    width: 383px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.dwp-portlet-suggest>.portlet-body>table>tbody>tr{
+    line-height: 30px; width: 100%;
+    color: #898989;
+}
+.dwp-portlet-suggest>.portlet-body>table>tbody>tr>th{
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+.dwp-portlet-suggest>.portlet-body>table>tbody>tr>td{
+    border: 1px solid #ddd;
+}
+/* 전자메일 */
+.dwp-portlet-mail>.portlet-body{
+    height: 322px; width: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.dwp-portlet-mail>.portlet-body>ul{
+    display: block;
+    width: 100%;
+}
+.dwp-portlet-mail>.portlet-body>ul>li{
+    width: 100%;
+    position: relative;
+    float: left;
+    padding: 20px 0 20px 6px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>a{
+    width: 68px; height: 68px;
+    float: left;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>a>img{
+    width: 100%; height: 100%;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.info{
+    float: left; width: 237px;
+    margin-left: 20px;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.info>.name{
+    font-size: 13px;
+    color: #898989;
+    margin-bottom: 10px;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.info>.detail_link{
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.info>.time{
+    font-size: 12px; height: 12px;
+    line-height: 12px;
+    color: #9f9f9f;
+    padding-left: 16px;
+    background: url(../IMG/time.svg) no-repeat center left;
+    background-size: 12px;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn{
+    width: 40px; height: 15px;
+    position: absolute;
+    right: 0; bottom: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>li{
+    width: 15px; height: 15px;
+    float: left;
+    text-indent: -9999px;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark{
+    float: left;
+    background: url(../IMG/bookmark.svg) no-repeat;
+    background-size: cover;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark:hover,
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.on{
+    background: url(../IMG/bookmark-on.svg) no-repeat;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.trash{
+    float: right;
+    background: url(../IMG/trash.svg) no-repeat;
+    background-size: auto;
+}
+/* My VPR */
+.dwp-portlet-vpr{}
+.dwp-portlet-vpr .portlet-body{
+    width: 100%; height: 295px;
+    padding: 26px 27px;
+}
+.dwp-portlet-vpr .portlet-body>ul{
+    width: 100%; height: 100%;
+    overflow: hidden;
+}
+.dwp-portlet-vpr .portlet-body>ul>li{
+    width: 103px; height: 114px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding-top: 81px;
+    background-repeat: no-repeat;
+    background-size: 103px 82px;
+    float: left;
+    margin: 0 13px 13px 0;
+    cursor: pointer;
+}
+.dwp-portlet-vpr .portlet-body>ul>li.vpr-1{background-image: url(../IMG/vpr-1.png);}
+.dwp-portlet-vpr .portlet-body>ul>li.vpr-2{background-image: url(../IMG/vpr-2.png);}
+.dwp-portlet-vpr .portlet-body>ul>li.vpr-3{background-image: url(../IMG/vpr-3.png);}
+.dwp-portlet-vpr .portlet-body>ul>li.vpr-4{background-image: url(../IMG/vpr-4.png);}
+.dwp-portlet-vpr .portlet-body>ul>li>a{
+    display: block;
+    width: 100%; height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+/* 전자 결재 */
+.dwp-portlet-approval>.portlet-body{
+    height: 523px; width: 100%;
+    overflow-y: scroll;
+}
+
+.dwp-portlet-approval>.portlet-body>.tabMenu{
+    height: 37px; width: 100%;
+    float: left;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul{
+    height: 26px; width: 317px; margin: 0 auto;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul>li{
+    float: left;
+    padding: 6px 17px;
+    background-color: #008cdb;
+    border-radius: 50px;
+    margin-right: 13px;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul>li:last-child{
+    margin-right: 0;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul>li>a{
+    width: 100%; height: 100%;
+    color: #fff;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con{
+    float: left;
+    width: 100%;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li{
+    width: 100%; height: 88px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    position: relative;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.name{
+    display: block;
+    position: absolute;
+    top: 21px; left: 0;
+    font-size: 13px;
+    color: #898989;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.detail_link{
+    display: block;
+    position: absolute;
+    top: 56px; left: 0;
+    color: #000; font-size: 15px;
+    font-weight: 600;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.time{
+    position: absolute;
+    top: 20px; right: 0;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px; color: #9f9f9f;
+    padding-left: 16px;
+    background: url(../IMG/time.svg) no-repeat center left;
+    background-size: 12px;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.inpro{
+    position: absolute;
+    top: 57px; right: 0;
+    font-size: 14px; color: #008cdb;
+}
+/* 최신지식 경조사 게시*/
+.dwp-portlet-board>.portlet-body{
+    width: 100%; height: 243px;
+    overflow-y: scroll;
+}
+.dwp-portlet-board>.portlet-body>ul{
+    float: left;
+    width: 100%; height: 100%;
+}
+.dwp-portlet-board>.portlet-body>ul>li{
+    width: 100%; height: 101px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a{display: block;float: left;width: 100%; height: 100%;}
+.dwp-portlet-board>.portlet-body>ul>li>a>.name{
+    display: block;
+    font-size: 13px;
+    color: #898989;
+    position: absolute;
+    top: 17px; left: 0;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.detail_link{
+    display: block;
+    font-size: 15px; color: 15px;
+    font-weight: 600;
+    position: absolute;
+    top: 40px; left: 0;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.time{
+    display: block;
+    position: absolute;
+    top: 73px; left: 0;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px; color: #9f9f9f;
+    padding-left: 16px;
+    background: url(../IMG/time.svg) no-repeat center left;
+    background-size: 12px;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.like{
+    display: block;
+    padding: 0 0 0 24px;
+    position: absolute;
+    top: 73px; right: 0;
+    background: url(../IMG/like.svg) no-repeat center left;
+    background-size: 15px;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.on,
+.dwp-portlet-board>.portlet-body>ul>li>a>.like:hover{
+    background: url(../IMG/like-on.svg) no-repeat center left;
+    background-size: 15px;
+}
+/* con 퀵메뉴 */
+.dwp-portlet-util{
+    width: 100%; height: 152px;
+    margin-bottom: 20px;
+}
+.dwp-portlet-util>ul{
+    width: 100%; height: 100%;
+}
+.dwp-portlet-util>ul>li{
+    float: left;
+    background-color: #fff;
+    width: 128px; height: 69px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.2);
+    -moz-box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.2);
+    box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.2);
+    margin-right: 13px;
+}
+.dwp-portlet-util>ul>li:nth-child(1),
+.dwp-portlet-util>ul>li:nth-child(2),
+.dwp-portlet-util>ul>li:nth-child(3){margin-bottom: 14px;}
+.dwp-portlet-util>ul>li:nth-child(3),
+.dwp-portlet-util>ul>li:nth-child(6){margin-right: 0;}
+.dwp-portlet-util>ul>li>a{float: left; width: 100%; height: 100%;}
+.dwp-portlet-util>ul>li>a>span{
+    float: left;
+    width: 48px; height: 48px;
+    border-radius: 50%;
+}
+.dwp-portlet-util>ul>li>a>span>img{
+    float: left;
+    width: 26px; height: 26px;
+    padding: 10px;
+}
+.dwp-portlet-util>ul>li>a>p{
+    float: left;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 18px 0 0 5px;
+}
+.dwp-portlet-util>ul>li>a.MES>span{background-color: #f5838b;}
+.dwp-portlet-util>ul>li>a.MES>p{color: #f5838b;}
+.dwp-portlet-util>ul>li>a.GIS>span{background-color: #78c0fd;}
+.dwp-portlet-util>ul>li>a.GIS>p{color: #78c0fd;}
+.dwp-portlet-util>ul>li>a.EIS>span{background-color: #9ad3a0;}
+.dwp-portlet-util>ul>li>a.EIS>p{color: #9ad3a0;}
+.dwp-portlet-util>ul>li>a.calendar>span{background-color: #b498cb;}
+.dwp-portlet-util>ul>li>a.calendar>p{color: #b498cb;}
+.dwp-portlet-util>ul>li>a.restaurant>span{background-color: #edb96e;}
+.dwp-portlet-util>ul>li>a.restaurant>p{color: #edb96e;}
+.dwp-portlet-util>ul>li>a.mybookmark>span{background-color: #78c0fd;}
+.dwp-portlet-util>ul>li>a.mybookmark>p{color: #78c0fd;margin: 10px 0 0 5px;}
+
+/* 공지사항 */
+.dwp-portlet-notice>.portlet-body{
+    width: 100%; height: 243px;
+}
+.dwp-portlet-notice>.portlet-body>ul{
+    width: 100%; height: 100%;
+}
+.dwp-portlet-notice>.portlet-body>ul>li{
+    width: 100%; height: 87px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a{
+    width: 100%; height: 100%;
+    display: block;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.detail_link{
+    display: block;
+    color: #000;
+    font-size: 15px; font-weight: 600;
+    position: absolute;
+    top: 20px; left: 0;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.time{
+    height: 12px; line-height: 12px;
+    font-size: 12px; color: #9f9f9f;
+    padding-left: 16px;
+    background: url(../IMG/time.svg) no-repeat center left;
+    background-size: 12px;
+    position: absolute;
+    top: 59px; left: 0;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn{
+    position: absolute;
+    right: 5px; top: 59px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li{
+    float: left;
+    padding: 0 0 0 24px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li.like{
+    background: url(../IMG/like.svg) no-repeat center left;
+    background-size: 15px;
+    margin-right: 5px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li.like:hover{
+    background: url(../IMG/like-on.svg) no-repeat center left;
+    background-size: 15px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li.comment{
+    background: url(../IMG/comment.svg) no-repeat center left;
+    background-size: 15px;
+}
+/* 퀵메뉴 */
+.quick{
+    background-color: #fff;
+    -webkit-box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.02);
+    -moz-box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.02);
+    box-shadow: 0px 14px 70px -10px rgba(137,137,137,0.02);
+    border-radius: 10px;
+}
+.quick-l{
+    background-color: #fff;
+    position: fixed;
+    top: 100px; left: 50px;
+    width: 98px; height: 672px;
+}
+.quick-R{
+    background-color: #fff;
+    position: fixed;
+    top: 100px; right: 50px;
+    width: 98px; height: 864px;
+}
+.quick>ul{
+    width: 100%; height: 100%;
+    padding: 0 7px;
+    box-sizing: border-box;
+}
+.quick>ul>li{
+    width: 100%; height: 95px;
+    float: left;
+    border-bottom: 1px solid #eee;
+}
+.quick>ul>li:last-child{border: none;}
+.quick>ul>li>a{
+    float: left;
+    width: 100%; height: 100%;
+}
+.quick>ul>li>a>img{
+    display: block;
+    height: 38px; width: 38px;
+    margin: 0 auto;
+    padding-top: 17px;
+}
+.quick>ul>li>a>.txt{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    margin-top: 6px;
+}
+
+/* 푸터 */
+footer{
+    position: relative;
+    width: 100%; height: 30px;
+    background-color: #ddd;
+}
+footer>.inner{
+    width: 1280px; height: 30px; 
+    margin: 0 auto;
+    text-align: right;
+    font-size: 12px; color: #898989;
+    line-height: 30px;
+}
+.flower-menu .flower-action{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 41px; height: 41px;
+    padding: 13px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0;
+}
+
+/* 테마 컬러 */
+
+/* 테마 1 핑크 */
+.dwp-icon-wrap.Thema-1>[class*="dwp-menu-"][data-count]:before{
+    background-color: #f5838b;
+}
+.visual button.Thema-1{
+    background-color: #f5838b;
+}
+.dwp-portlet .portlet-head.Thema-1{
+    border-bottom: 1px solid #f5838b;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul>li.Thema-1{
+    background-color: #f5838b;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.inpro.Thema-1{
+    color: #f5838b;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-1:hover,
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-1.on{
+    background: url(../IMG/bookmark-on-t1.svg) no-repeat;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-1.on,
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-1:hover{
+    background: url(../IMG/like-on-t1.svg) no-repeat center left;
+    background-size: 15px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li.like.Thema-1:hover{
+    background: url(../IMG/like-on-t1.svg) no-repeat center left;
+    background-size: 15px;
+}
+/* 테마 2 그린 */
+.dwp-icon-wrap.Thema-2>[class*="dwp-menu-"][data-count]:before{
+    background-color: #9ad3a0;
+}
+.visual button.Thema-2{
+    background-color: #9ad3a0;
+}
+.dwp-portlet .portlet-head.Thema-2{
+    border-bottom: 1px solid #9ad3a0;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul>li.Thema-2{
+    background-color: #9ad3a0;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.inpro.Thema-2{
+    color: #9ad3a0;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-2:hover,
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-2.on{
+    background: url(../IMG/bookmark-on-t2.svg) no-repeat;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-2.on,
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-2:hover{
+    background: url(../IMG/like-on-t2.svg) no-repeat center left;
+    background-size: 15px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li.like.Thema-2:hover{
+    background: url(../IMG/like-on-t2.svg) no-repeat center left;
+    background-size: 15px;
+}
+/* 테마 3 퍼플 */
+.dwp-icon-wrap.Thema-3>[class*="dwp-menu-"][data-count]:before{
+    background-color: #b498cb;
+}
+.visual button.Thema-3{
+    background-color: #b498cb;
+}
+.dwp-portlet .portlet-head.Thema-3{
+    border-bottom: 1px solid #b498cb;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul>li.Thema-3{
+    background-color: #b498cb;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.inpro.Thema-3{
+    color: #b498cb;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-3:hover,
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-3.on{
+    background: url(../IMG/bookmark-on-t3.svg) no-repeat;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-3.on,
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-3:hover{
+    background: url(../IMG/like-on-t3.svg) no-repeat center left;
+    background-size: 15px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li.like.Thema-3:hover{
+    background: url(../IMG/like-on-t3.svg) no-repeat center left;
+    background-size: 15px;
+}
+/* 테마 4 퍼플 */
+.dwp-icon-wrap.Thema-4>[class*="dwp-menu-"][data-count]:before{
+    background-color: #edb96e;
+}
+.visual button.Thema-4{
+    background-color: #edb96e;
+}
+.dwp-portlet .portlet-head.Thema-4{
+    border-bottom: 1px solid #edb96e;
+}
+.dwp-portlet-approval>.portlet-body>.tabMenu>ul>li.Thema-4{
+    background-color: #edb96e;
+}
+.dwp-portlet-approval>.portlet-body>.tab-con>li>a>.inpro.Thema-4{
+    color: #edb96e;
+}
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-4:hover,
+.dwp-portlet-mail>.portlet-body>ul>li>.btn>.bookmark.Thema-4.on{
+    background: url(../IMG/bookmark-on-t4.svg) no-repeat;
+}
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-4.on,
+.dwp-portlet-board>.portlet-body>ul>li>a>.like.Thema-4:hover{
+    background: url(../IMG/like-on-t4.svg) no-repeat center left;
+    background-size: 15px;
+}
+.dwp-portlet-notice>.portlet-body>ul>li>a>.btn>li.like.Thema-4:hover{
+    background: url(../IMG/like-on-t4.svg) no-repeat center left;
+    background-size: 15px;
+}
+@media screen and (max-width:1280px){
+    .quick-l{display: none;}
+    .quick-R{display: none;}
+}

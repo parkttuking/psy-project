@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title> MG새마을금고 외주직원관리 </title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="topArea">
+            <div class="left">
+                <h1><img src="IMG/logo.png"></h1>
+            </div>
+            <!--<div class="team_box">
+                <p class="name">문석희<span class="position">계장</span></p>
+                <p class="post">연구소</p>
+            </div>-->
+            <div class="user_wrap">
+                <p class="name">이지혜 대리님</p>
+                <p class="team">영업팀</p>
+                <button class="logout_btn">로그아웃</button>
+            </div>
+        </div>
+        <div class="gnbArea">
+            <ul>
+                <li><a href="#">프로젝트 및 업체 관리</a></li>
+                <li><a href="#">외주직원 정보 관리</a></li>
+                <li><a href="#">외주직원 신청 관리</a></li>
+                <li><a href="#">보안교육</a></li>
+                <li><a href="#">일일 체크리스트 관리</a></li>
+                <li><a href="#">정보공유</a></li>
+                <li><a href="#">공통관리</a></li>
+            </ul>
+        </div>
+    </header>
+	<section id="contens" class="contens">
+	    <div class="my_area contens_box">
+           <button class="btn_setting"><a href="#">설정</a></button>
+           <button class="btn_logout"><a href="#">로그아웃</a></button>
+           <div class="user_info">
+              <div class="user_img"><img src="IMG/20121234.jpg"></div>
+               <span class="user_name">홍길동</span>
+               <span class="user_depart">연구소</span>
+               <span class="user_rank">대리</span>
+           </div>
+        </div>
+        
+        <div class="schedule-box contens_box contens_li">
+           <div class="box_title">
+                <strong>오늘의 일정</strong>
+                <a href="#" class="btn_refre">
+                    <img src="IMG/refresh.svg" alt="더보기">
+                </a>
+                <a href="#" class="btn_more">
+                    <img src="IMG/more.svg" alt="더보기">
+                </a>
+           </div><!--// box_title -->
+            <ul>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+            </ul>
+        </div>
+        <div class="notice-box contens_box contens_li">
+           <div class="box_title">
+                <strong>공지사항</strong>
+                <a href="#" class="btn_refre">
+                    <img src="IMG/refresh.svg" alt="더보기">
+                </a>
+                <a href="#" class="btn_more">
+                    <img src="IMG/more.svg" alt="더보기">
+                </a>
+           </div><!--// box_title -->
+            <ul>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+            </ul>
+        </div>
+        <div class="issue_box contens_box">
+            <div class="box_title">
+                <strong>이슈 리포트</strong>
+                <a href="#" class="btn_refre">
+                    <img src="IMG/refresh.svg" alt="더보기">
+                </a>
+                <a href="#" class="btn_more">
+                    <img src="IMG/more.svg" alt="더보기">
+                </a>
+           </div><!--// box_title -->
+           <ul class="minibox">
+               <li>
+                   <a href="#">
+                       <p class="title">이전 일일보안<br>점검 미실시</p>
+                       <p class="count">
+                           <span class="num">10</span>
+                           <span>건</span>
+                       </p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <p class="title">이전 일일보안<br>점검 미결재</p>
+                       <p class="count">
+                           <span class="num">10</span>
+                           <span>건</span>
+                       </p>
+                   </a>
+               </li>
+               <li>
+                   <a href="#">
+                       <p class="title">지난달 자체교육 미실시</p>
+                       <p class="count">
+                           <span class="num">10</span>
+                           <span>건</span>
+                       </p>
+                   </a>
+               </li>
+               
+           </ul>
+        </div><!--// issue_box -->
+        <div class="appro-box contens_box contens_li">
+           <div class="box_title">
+                <strong>결재승인</strong>
+                <span class="count">3</span>
+                <a href="#" class="btn_refre">
+                    <img src="IMG/refresh.svg" alt="더보기">
+                </a>
+                <a href="#" class="btn_more">
+                    <img src="IMG/more.svg" alt="더보기">
+                </a>
+           </div><!--// box_title -->
+            <ul>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+            </ul>
+        </div>
+        <div class="progr-box contens_box contens_li">
+           <div class="box_title">
+                <strong>업무진행상황</strong>
+                <span class="count">3</span>
+                <a href="#" class="btn_refre">
+                    <img src="IMG/refresh.svg" alt="더보기">
+                </a>
+                <a href="#" class="btn_more">
+                    <img src="IMG/more.svg" alt="더보기">
+                </a>
+           </div><!--// box_title -->
+            <ul>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+                <li><a href="#"><p>Lorem ipsum dolor sit amet, consecte</p><span class="state on">대기중</span><span class="name">관리자</span><span class="date">22.00.00</span><span class="time">15:12</span></a></li>
+            </ul>
+        </div>
+
+        <div class="cont-b contens_box last_box">
+           <div class="button_box">
+               <ul>
+                   <li><a href="#">버튼1</a></li>
+                   <li><a href="#">버튼2</a></li>
+                   <li><a href="#">버튼3</a></li>
+               </ul>
+           </div>
+            <div class="table_box">
+                <table summary="프로젝트현황 내용입니다">
+                    <thead>
+                        <tr>
+                            <th scope="col">프로젝트명</th>
+                            <th scope="col">투입</th>
+                            <th scope="col">서약서X</th>
+                            <th scope="col">철수</th>
+                            <th scope="col">총원</th>
+                            <th scope="col">반입신청</th>
+                            <th scope="col">신청승인</th>
+                            <th scope="col">반입</th>
+                            <th scope="col">반입확인</th>
+                            <th scope="col">보안점검</th>
+                            <th scope="col">PC등록</th>
+                            <th scope="col">반출신청</th>
+                            <th scope="col">신청승인</th>
+                            <th scope="col">보안정검</th>
+                            <th scope="col">반출</th>
+                            <th scope="col">PC대수</th>
+                            <th scope="col">정검대상</th>
+                            <th scope="col">정검완료</th>
+                            <th scope="col">일일정검</th>
+                            <th scope="col">당월자체교육</th>
+                            <th scope="col">남은기간</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">테스트프로젝트</th>
+                            <td>10</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>실시</td>
+                            <td>실시</td>
+                            <td>30일</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><!--// table_box -->
+        </div><!--// cont-b -->
+	</section><!--// contens -->
+	<!--<footer>
+        <div class="inner"><p>COPYRIGHT 2019 © KFCC. ALL RIGHTS RESERVED.</p></div>
+	</footer>-->
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title> 타이틀 제목 </title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="chatWindow">
+        <div class="chat-gnb-wrap">
+            <ul class="chat-gnb">
+                <li class="chat-gnb-user"><a href="#">프로필이미지
+                    <img src="IMG/profile_1.png"></a>
+                </li>
+                <li class="chat-gnb-tab2"><a href="#">조직도</a></li>
+                <li class="chat-gnb-tab3"><a href="#" class="on">채팅</a></li>
+            </ul>
+            <div class="chat-gnb-toggle">
+                <button>
+                    버튼
+                </button>
+            </div>
+        </div><!--// chat-gnb-wrap -->
+        <div class="chat-header-wrap">
+            <h2 class="h-title">
+                채팅목록
+            </h2>
+        </div>
+        
+        <div class="chat-con-wrap">
+           <div class="inner">
+                <div class="chat-cons">
+                    <div class="chat-cons-inner">
+                        <div class="chat-con chat-con1" aria-label="대화상대창">
+                           <div class="chat-gnb-tab-wrap on">
+                                <ul class="gnb-tab">
+                                    <li class="gnb-tab1"><a href="#" class="on">조직도</a></li>
+                                    <li class="gnb-tab2"><a href="#">즐기찾기</a></li>
+                                    <li class="gnb-tab3"><a href="#">채널</a></li>
+                                </ul>
+                            </div><!--// chat-gnb-tab-wrap -->
+                            <div class="gnb-tab1-con gnb-tab-con on" aria-label="조직도탭">
+                                <div class="add-chat">
+                                    <a href="#"></a>채팅+ 
+                                </div>
+                                <div class="tree-wrap">
+                                    <ul class="tree">
+                                        <li>
+                                            <input type="checkbox" id="tccsteel">
+                                            <label for="tccsteel">&#40;주&#41;TCC스틸</label>
+                                            <ul>
+                                                <li>
+                                                    <input type="checkbox" id="steel_team_1">
+                                                    <label for="steel_team_1">1 팀</label>
+                                                    <ul>
+                                                        <li>
+                                                           <a href="#">
+                                                               <input type="checkbox" id="steel_user_1">
+                                                               <label for="steel_user_1" class="last-tree">홍길동</label>
+                                                           </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <input type="checkbox" id="steel_user_2">
+                                                                <label for="steel_user_2" class="last-tree">김모씨</label>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <input type="checkbox" id="steel_user_3">
+                                                                <label for="steel_user_3" class="last-tree">이모씨</label>
+                                                            </a>                                                        
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="steel_team_2">
+                                                    <label for="steel_team_2">2 팀</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="steel_team_3">
+                                                    <label for="steel_team_3">3 팀</label>    
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="tccins">
+                                            <label for="tccins">&#40;주&#41;TCC아이엔에스</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="gnb-tab2-con gnb-tab-con" aria-label="즐기찾기탭">
+                                <div class="fav-tab-wrap">
+                                    <ul class="fav-tab-list">
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic">
+                                                    <span class="user-photo">
+                                                        <img src="IMG/icon-no-profile.svg">
+                                                    </span>
+                                                </div>
+                                                <div class="msgwrap">
+                                                    <div class="msgwrap-title">
+                                                        <span class="nm">홍길동</span>
+                                                        <span class="date">2021-07-21</span>
+                                                        <span class="msg">
+                                                            마감일 준수해주세요~
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic">
+                                                    <span class="user-photo">
+                                                        <img src="IMG/icon-no-profile.svg">
+                                                    </span>
+                                                </div>
+                                                <div class="msgwrap">
+                                                    <div class="msgwrap-title">
+                                                        <span class="nm">유</span>
+                                                        <span class="date">2021-07-21</span>
+                                                        <span class="msg">
+                                                            마감일 준수해주세요~
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul><!--// fav-tab-list -->
+                                </div><!--// fav-tab-wrap -->
+                            </div>
+                            <div class="gnb-tab3-con gnb-tab-con" aria-label="채널탭"></div>
+                        </div>
+                        <div class="chat-con chat-con2 on" aria-label="채팅목록창">
+                            <div class="chat-list-wrap">
+                                <ul class="chat-list">
+                                    <li>
+                                        <a href="../2_chat_view/index.html">
+                                            <div class="pic" aria-label="프로필영역">
+                                                <span class="three-1 three">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                                <span class="three-2 three">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                                <span class="three-3 three">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                            </div>
+                                            <div class="msgwrap">
+                                                <div class="msgwrap-title">
+                                                    <span class="nm">홍길동,개발1,개발2</span>
+                                                    <span class="date">2021-07-21</span>
+                                                    <span class="msg">
+                                                        마감일 준수해주세요~
+                                                    </span>
+                                                    <span class="cnt">4</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../2_chat_view/index.html">
+                                            <div class="pic" aria-label="프로필영역">
+                                                <span class="one">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                            </div>
+                                            <div class="msgwrap">
+                                                <div class="msgwrap-title">
+                                                    <span class="nm">홍길동,개발1,개발2</span>
+                                                    <span class="date">2021-07-21</span>
+                                                    <span class="msg">
+                                                        마감일 준수해주세요~
+                                                    </span>
+                                                    <span class="cnt">13</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../2_chat_view/index.html">
+                                            <div class="pic" aria-label="프로필영역">
+                                                <span class="many-1 many">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                                <span class="many-2 many">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                                <span class="many-3 many">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                                <span class="many-4 many">
+                                                    <img src="IMG/icon-no-profile.svg">
+                                                </span>
+                                            </div>
+                                            <div class="msgwrap">
+                                                <div class="msgwrap-title">
+                                                    <span class="nm">홍길동,개발1,개발2</span>
+                                                    <span class="date">2021-07-21</span>
+                                                    <span class="msg">
+                                                        마감일 준수해주세요~
+                                                    </span>
+                                                    <span class="cnt">4</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div><!--// chat-con-wrap -->
+    </div>
+</body>
+<script>
+    $(function(){
+        $('.chat-gnb-toggle button').click(function(){
+            $(".chat-gnb-toggle button").toggleClass("on");
+            $(".chat-gnb-wrap").toggleClass("on");
+            $(".chat-cons").toggleClass("on");
+            $(".chat-header-wrap").toggleClass("on");
+            $(".chat-gnb-tab-wrap").toggleClass("on");
+        });
+        $('.chat-gnb-tab2 a').click(function(){
+            $(".chat-con2").toggleClass("on");
+            $(".chat-gnb-tab3 a").toggleClass("on");
+            $(".chat-con1").toggleClass("on");
+            $(".chat-gnb-tab2 a").toggleClass("on");
+            $(".h-title").text("대화상대");
+        });
+        $('.chat-gnb-tab3 a').click(function(){
+            $(".chat-con2").toggleClass("on");
+            $(".chat-gnb-tab3 a").toggleClass("on");
+            $(".chat-con1").toggleClass("on");
+            $(".chat-gnb-tab2 a").toggleClass("on");
+            $(".h-title").text("채팅목록");
+        });
+        $('.gnb-tab1 a').click(function(){
+            $(".gnb-tab2 a").removeClass("on");
+            $(".gnb-tab3 a").removeClass("on");
+            $(".gnb-tab1 a").addClass("on");
+            $(".gnb-tab1-con").addClass("on");
+            $(".gnb-tab2-con").removeClass("on");
+            $(".gnb-tab3-con").removeClass("on");
+            
+        });
+        $('.gnb-tab2 a').click(function(){
+            $(".gnb-tab1 a").removeClass("on");
+            $(".gnb-tab3 a").removeClass("on");
+            $(".gnb-tab2 a").addClass("on");
+            $(".gnb-tab2-con").addClass("on");
+            $(".gnb-tab1-con").removeClass("on");
+            $(".gnb-tab3-con").removeClass("on");
+        });
+        $('.gnb-tab3 a').click(function(){
+            $(".gnb-tab1 a").removeClass("on");
+            $(".gnb-tab2 a").removeClass("on");
+            $(".gnb-tab3 a").addClass("on");
+            $(".gnb-tab3-con").addClass("on");
+            $(".gnb-tab1-con").removeClass("on");
+            $(".gnb-tab2-con").removeClass("on");
+        });
+        
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>대성에너지 그룹웨어</title>
+    
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+    
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+        *{
+            font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0;
+            font-size: 15px;
+        }
+        html,body{height: 100%;}
+		ul{list-style: none;}
+		a{text-decoration: none;}
+        
+        .login-wrap{
+			max-width: 100%; height: 100%;
+            position: relative;
+            background: url(img/background_IMG.png) left bottom no-repeat;
+            background-size: cover;
+            overflow: hidden;
+		}
+        .center{
+            box-sizing: border-box;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            left: 0; top: 45%;
+            transform: translateY(-45%);
+            -ms-transform: translateY(-45%);
+            -webkit-transform: translateY(-45%);
+        }
+        .login-inner{
+            border-top: 3px solid #ca2027;
+            border-bottom: 2px solid #ca2027;
+            box-sizing: border-box;
+            width: 608px;
+            margin: 0 auto;
+        }
+        .Title{
+            box-sizing: border-box;
+            height: 83px; width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .Title .Qnet{
+            float: left;
+            position: absolute;
+            left: 50%; top:0%;
+            transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            margin-top: 18px;
+        }
+        .Title .energy{
+            position: absolute;
+            right: 0; bottom: 5%;
+            opacity: 0.8;
+        }
+        .login{
+            position: relative;
+            box-sizing: border-box;
+            width: 100%; height: 280px;
+            background: #f5f5f5 url(img/login-form_bg.png) no-repeat;
+            padding-top: 33px;
+        }
+        .login-top-center{
+            height: 120px; width: 100%;
+            position: absolute;
+            left: 0; top: 55%;
+            transform: translateY(-55%);
+            -ms-transform: translateY(-55%);
+            -webkit-transform: translateY(-55%);
+        }
+        .login-form{
+            width: 316px;
+            margin: 0 auto;
+        }
+        .login-form>form>fieldset>legend{
+            position: absolute;
+            margin: 0; padding: 0;
+            width: 0; height: 0;
+            overflow: hidden;
+        }
+        .login-form>form>fieldset>ul{
+            float: left;
+        }
+        .login-form>form>fieldset>ul>li{
+            margin-bottom: 11px;
+        }
+        .login-form>form>fieldset>ul>li:first-child>input{
+            background: url(img/id_icon.gif) no-repeat 11px 11px;
+        }
+        .login-form>form>fieldset>ul>li:last-child>input{
+            background: url(img/Password_icon.gif) no-repeat 11px 11px;
+        }
+        .login-form>form>fieldset>ul>li:last-child{
+            margin-bottom: 0;
+        }
+        .login-form>form>fieldset>ul>li>label{
+            position: absolute;
+            margin: 0; padding: 0;
+            width: 0; height: 0;
+            overflow: hidden;
+            text-indent: -999999em;
+            box-sizing: border-box;
+        }
+        .login-form>form>fieldset>ul>li>input{
+            border: 1px solid #dbdad9;
+            box-sizing: border-box;
+            height: 42px; width: 224px;
+            padding-left: 37px;
+        }
+        
+        *::-webkit-input-placeholder { color: #c3c3c3; font-weight: normal;} 
+        *:-moz-placeholder { /* FF 4-18 */ color: #c3c3c3; font-weight: normal;} 
+        *::-moz-placeholder { /* FF 19+ */ color: #c3c3c3; font-weight: normal;} 
+        *:-ms-input-placeholder { /* IE 10+ */ color: #c3c3c3; font-weight: normal;}
+        
+        .login-form>form>fieldset>.btn_primary{
+            width: 83px; height: 95px;
+            background: #ca2027;
+            color: #fff; cursor: pointer;
+            text-align: center;
+            border: none;
+            float: right;
+        }
+        .login-form>form>.saveid{
+            margin-top: 9px;
+            font-size: 12px;
+            color: #b1b1b1;
+        }
+        .login-form>form>.saveid>.skip{
+            display: block;
+            float: left;
+            margin-top: 2px;
+            margin-right: 3px;
+        }
+        .login-form>form>.saveid>label{
+            display: block;
+            font-size: 13px;
+            width: auto;
+            line-height: 16px;
+        }
+        .COPYRIGHT{
+            color: #989898;
+            margin-top: 14px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="center">
+           <div class="login-inner">
+               <div class="Title">
+                   <img src="img/login_page_title_logo.png" alt="대성Qnet" class="Qnet">
+                   <img src="img/logo.png" alt="대성에너지" class="energy">
+               </div><!--// Title -->
+               <div class="login">
+                   <div class="login-top-center">
+                       <div class="login-form">
+                           <form name="frm" method="post">
+                               <fieldset>
+                                   <legend>로그인</legend>
+                                   <ul>
+                                       <li>
+                                           <label for="memberid">아이디</label>
+                                           <input type="text" name="memberid" class="text" title="아이디 입력" placeholder="ID">
+                                       </li>
+                                       <li>
+                                           <label for="password">비밀번호</label>
+                                           <input type="password" name="password" class="text" title="비밀번호 입력" placeholder="Password">
+                                       </li>
+                                   </ul>
+                                   <input type="submit" class="btn_primary" id="btnLogin" value="LOGIN">
+                               </fieldset>
+                               <p class="saveid">
+                                   <input class="saveid" type="hidden" value="false">
+                                   <input id="chkSaveid" name="chkSaveid" type="checkbox" value="true" class="skip">
+                                   <label for="chkSaveid">ID SAVED</label>
+                               </p>
+                           </form>
+                       </div><!--// login-form -->
+                   </div>
+               </div><!--// login-->
+            </div><!--// login-inner -->
+            <p class="COPYRIGHT">COPYRIGHT© DAESUNG ENERGY. All Rights Reserved.</p>
+        </div><!--// center -->
+    </div><!--// login-wrap -->
+</body>
+</html>

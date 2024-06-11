@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
+
+
+<!-- particles.js container -->
+<div id="particles-js">
+    <div class="login-inner">
+               <div class="Title">
+                   <!--<img src="img/logo-w.svg" alt="MG새마을금고" class="logo">-->
+                   <p>외주인력보안관리</p>
+               </div><!--// Title -->
+               <div class="login">
+                   <div class="login-top-center">
+                       <div class="login-form">
+                           <form name="frm" method="post">
+                               <fieldset>
+                                   <legend>로그인</legend>
+                                   <ul>
+                                       <li>
+                                           <label for="memberid">아이디</label>
+                                           <input type="text" name="memberid" class="text" title="아이디 입력" placeholder="ID를 입력해주세요." onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+                                       </li>
+                                       <li>
+                                           <label for="password">비밀번호</label>
+                                           <input type="password" name="password" class="text" title="비밀번호 입력" placeholder="Password를 입력해주세요." onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'');">
+                                       </li>
+                                   </ul>
+                                   <input type="submit" class="btn_primary" id="btnLogin" value="LOGIN">
+                               </fieldset>
+                           </form>
+                       </div><!--// login-form -->
+                   </div>
+               </div><!--// login-->
+            </div><!--// login-inner -->
+            <p class="COPYRIGHT">본 사이트는 권한이 있는 사용자만이 접근할 수 있습니다.<br>권한이 없는 사용자가 불법으로 접근할 경우 법에 의해 처벌 받을 수 있습니다. </p>
+</div>
+
+<!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

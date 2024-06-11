@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* Reset */ 
+body{font-family: 'Noto Sans KR', sans-serif; color: black;font-size: 14px;}
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,p{padding: 0; margin: 0;}
+h1,h2,h3,h4,h5,h6,th{font-weight: normal;}
+ul,ol,li,{list-style: none;}
+a{text-decoration: none; color: black;}
+address{font-style: normal;}
+
+/* Layout */
+.container{
+	width: 1180px;
+	margin: 0 auto;
+	overflow: auto;
+	/*background-image: url(images/Lnb_bg.png);
+	background-repeat: repeat-y;
+	background-position: left top;*/
+	background: url(images/Lnb_bg.png) repeat-y left top;
+}
+.left{
+	width: 250px;
+	float: left;
+
+}
+.content{
+	background-color: white; 
+	width:871px;
+	padding-left: 59px;
+	float: left;
+	overflow: 
+}
+/* Header */
+/* content */
+.rowtype{
+	border-top: 2px solid #c2c2c2;
+	width: 100%;
+	border-spacing: 0px;
+}
+.rowtype th{
+	border-bottom: 1px solid #cfcfcf;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
+	width: 122px;
+	height: 45px;
+	background-color: #f8f8f8;
+}
+.rowtype .td_Group1 select{
+	border: 1px solid #c2c2c2;
+}
+.rowtype .td_Group3 select{
+	height: 26px; width: 161px;
+	border: 1px solid #c2c2c2;
+}
+.rowtype td{
+	border-bottom: 1px solid #cfcfcf;
+	border-right: 1px solid #cfcfcf;
+	padding-left: 20px;
+}
+.rowtype .tschword3{
+	padding-left: 10px;
+	width: 538px; height: 21px; 
+	border: 1px solid #c2c2c2;
+}
+/* ad */
+/* footer */
+

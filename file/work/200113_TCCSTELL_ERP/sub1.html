@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title> 서브페이지 </title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/header-footer-style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/sub1-style.css">
+	<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="JS/sub1-sidebar.js"></script>
+</head>
+<body>
+	<div class="Wrap">
+	    <header>
+            <div class="top-wrap">
+                <div class="inner">
+                    <div class="logo_box">
+                        <h2 class="logo"><a>TCC스틸</a></h2>
+                        <h3><span>개발</span>자원요청 사이트</h3>
+                        <button title="메뉴구성설명">메뉴구성설명 바로가기</button>
+                    </div><!--// logo_box -->
+                    <div class="user_info">
+                        <div class="name"><strong>홍길동 부장님</strong> 영업팀</div>
+                        <button title="로그아웃">로그아웃</button>
+                    </div><!--// user_info -->
+                </div><!--// inner -->
+            </div><!--// top-wrap -->
+            <div class="gnb_area">
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">위탁관리</a></li>
+                        <li><a href="#">임가공관리</a></li>
+                        <li><a href="#">게시판</a></li>
+                        <li><a href="#">내부서비스관리</a></li>
+                        <li><a href="#">내부시스템관리</a></li>
+                        <li><a href="#">SAMPLE</a></li>
+                    </ul>
+                </div><!--// gnb -->
+            </div><!--// gnb_area -->
+        </header>
+        <div class="container">
+            <div class="inner">
+                <div id="sidebar">
+                    <ul>
+                        <li class="has-sub"><a href="#"><span>원판사용량등록</span></a>
+                            <ul>
+                                <li class="has-sub"><a href="#"><span>depth2-1</span></a>
+                                    <ul>
+                                        <li><a href="#"><span>depth3-1</span></a></li>
+                                        <li class="last"><a href="#"><span>depth3-2</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-sub"><a href="#"><span>depth2-1</span></a>
+                                    <ul>
+                                        <li><a href="#"><span>depth3-1</span></a></li>
+                                        <li class="last"><a href="#"><span>depth3-2</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li><!--// active has-sub -->
+                        <li class="has-sub"><a href="#"><span>위탁품수불</span></a>
+                            <ul>
+                                <li class="has-sub"><a href="#"><span>depth2-1</span></a>
+                                    <ul>
+                                        <li><a href="#"><span>depth3-1</span></a></li>
+                                        <li class="last"><a href="#"><span>depth3-2</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-sub"><a href="#"><span>depth2-1</span></a>
+                                    <ul>
+                                        <li><a href="#"><span>depth3-1</span></a></li>
+                                        <li class="last"><a href="#"><span>depth3-2</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="last"><a href="#"><span>원판회수</span></a></li>
+                    </ul>
+                </div><!--// cssmenu -->
+                <div class="contents">
+                    <div class="search_field">
+                        <div class="search_field_loc">
+                            <h5><strong>제목</strong></h5>
+                            <ul class="buttons">
+                                <li><a href="#"><img src="IMG/excel.svg"><p>엑셀</p></a></li>
+                                <li><a href="#"><img src="IMG/print.svg"><p>인쇄</p></a></li>
+                                <li><a href="#"><img src="IMG/search.svg"><p>조회</p></a></li>
+                                <li><a href="#"><img src="IMG/save.svg"><p>등록</p></a></li>
+                            </ul><!--// buttons -->
+                        </div>
+                        <div class="modify_user">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>거래처</th>
+                                        <td>
+                                            <select>
+                                                <option selected>전체</option>
+                                                <option>선택1</option>
+                                                <option>선택2</option>
+                                                <option>선택3</option>
+                                            </select>
+                                        </td>
+                                        <th>출하선</th>
+                                        <td>
+                                            <select>
+                                                <option selected>전체</option>
+                                                <option>선택1</option>
+                                                <option>선택2</option>
+                                                <option>선택3</option>
+                                            </select>
+                                        </td>
+                                        <th>출하선</th>
+                                        <td>
+                                            <select>
+                                                <option selected>전체</option>
+                                                <option>선택1</option>
+                                                <option>선택2</option>
+                                                <option>선택3</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>사용일자</th>
+                                        <td class="calendar">
+                                            <input type="text" class="date hasDatepicker" value>
+                                            <a href="#"><img class="ui-datepicker-trigger" src="IMG/calendar.svg" alt="선택" title="선택"></a>
+                                        </td>
+                                        <th>품명</th>
+                                        <td>
+                                            <input >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제품규격</th>
+                                        <td class="sPrdstds">
+                                            <input type="text" value=""><p>X</p>
+                                            <input type="text" value=""><p>X</p>
+                                            <input type="text" value="">
+                                            <input type="hidden" value="">
+                                        </td>
+                                        <th>부착량</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>등급</th>
+                                        <td>
+                                            <select>
+                                                <option selected>전체</option>
+                                                <option>선택1</option>
+                                                <option>선택2</option>
+                                                <option>선택3</option>
+                                            </select>
+                                        </td>
+                                        <th>기준일자</th>
+                                        <td class="calendar">
+                                            <input type="text" class="date hasDatepicker" value>
+                                            <a href="#"><img class="ui-datepicker-trigger" src="IMG/calendar.svg" alt="선택" title="선택"></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!--// modify_user -->
+                        <div class="default_tablestyle">
+                            <table>
+                                <colgroup>
+                                    <col width="8%">
+                                    <col width="9%">
+                                    <col width="4%">
+                                    <col width="*">
+                                    <col width="*">
+                                    <col width="9%">
+                                    <col width="7%">
+                                    <col width="7%">
+                                    <col width="7%">
+                                    <col width="4%">
+                                    <col width="7%">
+                                    <col width="8%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>입고일자</th>
+                                        <th>제품번호</th>
+                                        <th>품명</th>
+                                        <th>제품 규격</th>
+                                        <th>제품 특성</th>
+                                        <th>부착량</th>
+                                        <th>입고수량</th>
+                                        <th>입고중량</th>
+                                        <th>잔량(매)</th>
+                                        <th>선택</th>
+                                        <th>사용량</th>
+                                        <th>생산일자</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr>
+                                       <td>20200000</td>
+                                       <td>3EB102231</td>
+                                       <td>ET</td>
+                                       <td>210x756.30x256.30</td>
+                                       <td>MR , DR550 , RD</td>
+                                       <td>2.80/2.80</td>
+                                       <td>1,400</td>
+                                       <td>1,500</td>
+                                       <td>900</td>
+                                       <td><input type="checkbox"></td>
+                                       <td>900</td>
+                                       <td>20200000</td>
+                                   </tr>
+                                   <tr class="bgE5ECF5">
+                                       <td colspan="6" align="center">
+                                           <span>[210x756.30x256.30 계]</span>
+                                       </td>
+                                       <td><span>1,400</span></td>
+                                       <td><span>1,500</span></td>
+                                       <td><span>900</span></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                   </tr>
+                                   <tr class="bgCCDAEB">
+                                       <td colspan="6" align="center">
+                                           <span>총 합 계</span>
+                                       </td>
+                                       <td><span>46,100</span></td>
+                                       <td><span>54,500</span></td>
+                                       <td><span>29,700</span></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                   </tr>
+                                </tbody>
+                            </table>
+                        </div><!--// default_tablestyle -->
+                    </div><!--// search_field -->
+                </div><!--// contents -->
+            </div><!--// inner -->
+        </div><!--// container -->
+        <footer>
+            <div class="inner">
+                <p>서울특별시 영등포구 국회대로 543(당산동4가) 동양타워. COPYRIGHT(C) 2020 TCCINS. ALL RIGHT RESERVED</p>
+            </div>
+        </footer>
+	</div><!--// Wrap -->
+</body>
+</html>

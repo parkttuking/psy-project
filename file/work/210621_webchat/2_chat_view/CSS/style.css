@@ -1,0 +1,263 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html, body{
+    width: 100%; height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.chatWindow{
+    width: 100%; height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.chat_message_section{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%; height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom: 22px;
+    line-height: 19.5px;
+    letter-spacing: 0.02em;
+    word-break: break-all;
+    visibility: visible;
+    padding: 0 20px 127px 20px;
+}
+.chat_message_section ul{
+    overflow: hidden; 
+}
+.chat_message_section ul li.new_message_balloon_area{
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.thumbnail_profile{
+    float: left;
+    border-radius: 50%;
+    width: 35px; height: 35px;
+    overflow: hidden;
+}
+.thumbnail_profile a{
+    float: left;
+    width: 100%; height: 100%;
+}
+.thumbnail_profile a img{
+    float: left;
+    width: 100%; height:auto;
+}
+.message_box{
+    float: left;
+    position: relative;
+    width: calc(100% - 38px);
+    max-width: 412px;
+    margin-left: 3px;
+}
+.Sender{
+    float: left;
+    width: 50%;
+    font-size: 14px;
+}
+.message_balloon_wrap{
+    position: relative;
+    max-width: 361px;
+    float: left;
+    padding-right: 50px;
+}
+.message_balloon_wrap .new_message_balloon{
+    font-size: 15px;
+    line-height: 18px;
+    padding: 15px;
+    border: 1px solid #EEEEEF;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    border-radius: 0 30px 30px 30px;
+    float: left;
+    margin-top: 10px;
+}
+.new_message_balloon .file_wrap a{
+    display: block;
+    width: 100%; height: 100%;
+    text-decoration: none;
+}
+.new_message_balloon .file_wrap a img{
+    float: left;
+    width: 45px; height: 45px;
+    margin-right: 10px;
+}
+.new_message_balloon .file_wrap a p{
+    float: left;
+    font-size: 15px;
+    color: #000;
+    line-height: 25px;
+}
+.new_message_balloon .file_wrap a span{
+    display: block;
+    font-size: 13px;
+    color: #898989;
+    line-height: 20px;
+}
+.txt_confirm{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 42px;
+}
+.txt_confirm ._read{
+    display: block;
+    color: #2C64E3;
+} 
+/* 채팅 타입2 */
+.new_message_balloon_area.type2 .thumbnail_profile{
+    float: right;
+}
+.new_message_balloon_area.type2 .message_box{
+    float: right;
+    margin-left: 0;
+    margin-right: 3px;
+}
+.new_message_balloon_area.type2 .Sender{
+    float: right;
+    text-align: right;
+    font-size: 13px;
+}
+.new_message_balloon_area.type2 .message_balloon_wrap{
+    float: right;
+    padding-right: 0;
+    padding-left: 50px;
+}
+.new_message_balloon_area.type2 .new_message_balloon{
+    float: right;
+    border-radius: 30px 0px 30px 30px;   
+}
+.new_message_balloon_area.type2 .txt_confirm{
+    left: 0;
+}
+.new_message_balloon_area.type2 ._read{
+    text-align: right;
+}
+/* 푸터 */
+.chat_footer{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 127px;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 20px;
+}
+.chat_write{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #EEEEEF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    }
+.chat_write_area{
+    position: relative;
+    width: 100%; height: 100%;
+}
+.chat_input_area{
+    position: absolute;
+    top: 0; left:0;
+    width: 100%; height: 100%;
+    padding: 10px 95px 31px 10px;
+    box-sizing: border-box;
+}
+.chat_input_area .chat_input{
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: #444;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.input_btn_wrap{
+    position: absolute;
+    bottom: 3px; left: 0;
+    width: 100%; height: 21px;
+    padding-left: 10px;
+}
+.input_btn_wrap button{
+    width: 13px;
+    height: 13px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.input_btn_wrap .file_btn{
+    background-image: url(../IMG/input_btn_wrap.png);
+    background-position: top left; 
+}
+.input_btn_wrap .share_btn{
+    background-image: url(../IMG/input_btn_wrap.png);
+    background-position: top center; 
+}
+.input_btn_wrap .photo_btn{
+    background-image: url(../IMG/input_btn_wrap.png);
+    background-position: top right; 
+}
+.submit_btn_wrap{
+    position: absolute;
+    top: 7px; right: 8px;
+    width: 80px; height: 71px;
+    box-sizing: border-box;
+    line-height: 71px;
+    text-align: center;
+}
+.submit_btn_wrap .btn_submit{
+    color: #8E8E8E;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    width: 100%; height: 100%;
+    background: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #DDDDDD;
+}
+.submit_btn_wrap .btn_submit:hover{
+    background-color: #d3d3d3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

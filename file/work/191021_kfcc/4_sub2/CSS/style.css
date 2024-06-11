@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body,html{
+    width: 100%; height: 100%!important;
+    background-color: #f5f5f5;
+    position: relative;
+}
+.contens{
+    width: 1370px; min-width: 1370px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+}
+.contens:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 박스 공통 CSS */
+.contens_box{
+    float: left;
+    background-color: white;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(137,137,137,0.1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(137,137,137,0.1);
+    box-shadow: 5px 5px 5px 0px rgba(137,137,137,0.1);
+    padding: 12px 13px;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 12px;
+}
+.contens_box>h3{
+    display: block;
+    float: left;
+    font-size: 19px;
+    font-weight: 600;
+    color: #666;
+}
+.last_box{margin-right: 0!important;}
+.cont-b{width: 100%;}
+.table_style{
+    float: left;
+    margin: 13px 0;
+}
+.table_style h4{
+    background-color: #047bc2;
+    float: left;
+    color: #fff;
+    padding: 5px 10px;
+    
+}
+.table_style thead tr{
+    border-bottom: 1px solid #ddd;
+}
+.table_style tr:last-child{border: none;}
+.table_style tbody tr{
+    color: #898989;
+}
+.table_style tbody tr:hover{color: #000;}
+.table_style{width: 100%;}
+.table_style table{
+    width: 100%;
+}
+.table_style table thead tr{
+    color: #000;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+.table_style table tbody tr{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.table_style1 table tbody tr:nth-child(even),
+.table_style2 table tbody tr:nth-child(even),
+.table_style3 table tbody tr:nth-child(even),
+.table_style4 table tbody tr:nth-child(even){
+    background-color: #f6f7fb;
+}
+.table_style table thead{
+    border-top: 2px solid #047bc2;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.table_total{
+    width: 100%; height: 40px;
+    line-height: 40px;
+    float: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.table_total .inner{
+    float: right;
+    width: 30%;
+}
+.table_total .inner p{
+    float: left;
+    text-align: center;
+}
+.table_total .inner p:nth-child(1){width: 33.3333%; color: #047bc2;}
+.table_total .inner p:nth-child(2){width: 66.6666%}
+
+.table_style3, .table_style5, .table_style7{width: 49%;}
+.table_style4, .table_style6, .table_style8{width: 49%; float: right!important;}
+
+.table_style5, .table_style6{
+    border: 1px solid #ddd;
+    height: 200px;
+}
+.table_style .border_b{
+    border-bottom: 1px solid #ddd;
+}

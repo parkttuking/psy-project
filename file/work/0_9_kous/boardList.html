@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Q&amp;A</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/sub.js"></script>
+    <script src="js/gnb.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <header class="sub_header">
+            <h1 class="logo">
+                <a href="index.html"> <img src="images/main_logo.png" alt="한국문화의집 KOUS"></a> 
+            </h1>
+            
+            <nav>
+                <ul class="gnb">
+                    <li class="li01"> 
+						<a href="#">공연</a>
+						<ul class="sub_gnb">
+							<li><a href="#">공연장안내</a></li>
+							<li><a href="#">공연안내</a></li>
+							<li><a href="#">대관신청</a></li>
+						</ul>
+					</li> 
+					
+                    <li class="li02">
+						<a href="#">공예건축학교</a>
+						<ul class="sub_gnb">
+							<li><a href="#">교육안내</a></li>
+							<li><a href="#">과목별소개</a></li>
+							<li><a href="#">수강신청</a></li>
+						</ul>
+					</li>
+					
+                    <li class="li03">
+						<a href="#">문화유산교육</a>
+						<ul class="sub_gnb">
+							<li><a href="#">청소년교육</a></li>
+							<li><a href="#">교사연수</a></li>
+							<li><a href="#">전통문화체험</a></li>
+							<li><a href="#">문화유산 교육단체 지원</a></li>
+							<li><a href="#">교육신청</a></li>
+						</ul>
+					</li>
+					
+                    <li class="li04">
+						<a href="#">알림마당</a>
+						<ul class="sub_gnb">
+							<li><a href="about.html">한국문화의집 소개</a></li>
+							<li><a href="map.html">오시는길</a></li>
+							<li><a href="#">시설안내</a></li>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="boardList.html">Q&amp;A</a></li>
+						</ul>
+					</li>
+                    
+                </ul>
+                
+               <a href="#" class="btn_push">교육공연 알림 서비스</a>
+                
+                
+            </nav><!--nav--> 
+        
+        </header>
+    <div class="content">
+        <div class="sub_top">
+			<div class="sub_top_tit_wrap">
+				<div class="page_nav">
+					<ul>
+						<li><a href="index.html">
+							<img src="images/bread_home.png" alt="home">
+						</a></li>
+						<li>알림마당</li>
+						<li>한국문화의집 소개</li>
+					</ul>
+				</div><!--//page_nav-->
+					
+				<div class="sub_sns_menu">
+					<ul>
+						<li><a href="#">
+							<img src="images/sh_facebook.jpg" alt="facebook">
+						</a></li>
+						
+						<li><a href="#">
+							<img src="images/sh_twitter.jpg" alt="twitter">
+						</a></li>
+						
+						<li><a href="#">
+							<img src="images/sh_print.jpg" alt="print">
+						</a></li>
+						
+					</ul>
+				</div><!--//sub_sns_menu-->
+				
+				<h2><img src="images/sv4_1.jpg" alt="알림마당"></h2>
+				
+			</div><!--//sub_top_tit_wrap-->
+				
+			<div class="sub_top_menu_wrap">
+				<ul>
+					<li><a href="about.html">한국문화의집 소개</a></li>
+					<li><a href="map.html">오시는 길</a></li>
+					<li><a href="#">시설안내</a></li>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="boardList.html" class="on">Q&amp;A</a></li>
+				</ul>
+			</div><!--//sub_top_menu_wrap-->
+			
+             <form class="sch_form">
+                <span class="sch_inner_each">
+                    <label for="sch_sort" class="sch_label"> 구분</label>
+                    <select name="category" id="sch_sort" class="sch_select">
+                        <option value selected>전체</option>
+                        <option value="5">교육</option>
+                        <option value="6">공연</option>
+                        <option value="7">기타</option>
+                    </select>
+                </span>
+                <span class="sch_inner_each">
+                    <label for="keyword" class="sch_label">검색어</label>
+                    <input type="text" id="keyword" class="sch_input">
+                    <a href="#" class="sch_btn"> 검색</a>
+                </span>
+            </form>
+			
+        </div><!--//sub_top-->
+        <div class="sub_con">
+           <table class="dtl">
+                <caption>
+				한국문화의집 Q&amp;A(질의응답) 표 입니다. 번호, 구분, 제목, 상태, 작성자, 작성일, 조회수 로 구성되어 있습니다.
+                </caption>
+                <colgroup>
+                    <col width="7%">
+                    <col width="7%">
+                    <col width="auto%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="10%">
+                    <col width="10%">
+                </colgroup>
+                
+                <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">구분</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">상태</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">작성일</th>
+                        <th scope="col">조회수</th>
+                    </tr>
+                    
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>45</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">단기간 강좌 문의 입니다.</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_ing">검토중</a>
+                        </td><!--상태-->
+                        <td>최**</td><!--작성자-->
+                        <td>2017-03-17</td><!--작성일-->
+                        <td>2</td><!--조회수-->
+                    </tr>
+                    
+                    <tr>
+                        <td>44</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">단기강좌 자수보자기반 문의</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>나**</td><!--작성자-->
+                        <td>2017-03-15</td><!--작성일-->
+                        <td>3</td><!--조회수-->
+                    </tr>
+                    
+                    <tr>
+                        <td>43</td><!--번호-->
+                        <td>기타</td><!--구분-->
+                        <td class="tit normal">판매자 제안건</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>트****</td><!--작성자-->
+                        <td>2017-03-06</td><!--작성일-->
+                        <td>2</td><!--조회수-->
+                    </tr>
+                    
+                    <tr>
+                        <td>42</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">교육을 받을수 있는 자격은 구혜자 선생이 결정하는지 답변주세요.</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_ing">검토중</a>
+                        </td><!--상태-->
+                        <td>빈**</td><!--작성자-->
+                        <td>2017-03-04</td><!--작성일-->
+                        <td>1</td><!--조회수-->
+                    </tr>
+                    
+                    <tr>
+                        <td>41</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">교육관련 질문 드립니다.</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>사**</td><!--작성자-->
+                        <td>2017-02-28</td><!--작성일-->
+                        <td>4</td><!--조회수-->
+                    </tr> 
+                     
+                    <tr>
+                        <td>40</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">침선반 기초</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>오**</td><!--작성자-->
+                        <td>2017-02-28</td><!--작성일-->
+                        <td>6</td><!--조회수-->
+                    </tr>
+                    
+                    <tr>
+                        <td>39</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">소목 수공구를 미리 알려주셨으면 좋겠어요.</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>유**</td><!--작성자-->
+                        <td>2017-02-27</td><!--작성일-->
+                        <td>4</td><!--조회수-->
+                    </tr>
+                    
+                    <tr>
+                        <td>38</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">전통 목가구반 준비물</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>길**</td><!--작성자-->
+                        <td>2017-02-27</td><!--작성일-->
+                        <td>6</td><!--조회수-->
+                    </tr>
+                    
+                     <tr>
+                        <td>37</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">소목반 준비물?</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>김**</td><!--작성자-->
+                        <td>2017-02-23</td><!--작성일-->
+                        <td>3</td><!--조회수-->
+                    </tr>
+                    
+                    <tr>
+                        <td>36</td><!--번호-->
+                        <td>교육</td><!--구분-->
+                        <td class="tit normal">이번 소목강의 준비물은????</td><!--제목-->
+                        <td>
+                            <a href="#" class="qa_end">답변완료</a>
+                        </td><!--상태-->
+                        <td>유**</td><!--작성자-->
+                        <td>2017-02-22</td><!--작성일-->
+                        <td>10</td><!--조회수-->
+                    </tr>
+                    
+                    
+                </tbody>
+                
+            </table>
+            
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#" class="active_off">2</a>
+                <a href="#" class="active_off">3</a>
+                <a href="#" class="active_off">4</a>
+                <a href="#" class="active_off">5</a>
+            </div><!--//pagination-->
+            
+            <div class="bnt_wrap">
+                <a href="boardcreate.html" class="common_btn regist">
+					등록
+				</a>
+                <a href="#" class="common_btn list">목록</a>
+            </div><!--//bnt_wrap-->
+            
+        </div><!--//sub_con-->
+    
+    </div><!--//content-->
+    <footer>
+        <p>
+            <span>한국문화재재단</span> 
+            <span>(06180) 서울특별시 강남구 테헤란로 92길 12-9 &#40;대치동944-22&#41; </span>
+            Tel: 02-3011-1788｜Fax: 02-567-6979｜
+            <a href="#">개인정보처리방침</a>
+        </p>
+        <p>
+            <span>Copyringht by 2016 한국문화재재단 All rights Reserved.</span>
+        </p>
+    </footer>
+</div><!--//wrap-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

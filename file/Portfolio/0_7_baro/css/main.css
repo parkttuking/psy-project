@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+span.En{
+    display: inline-block!important;
+    color: #fff!important;
+    letter-spacing: 0!important;
+}
+eader{
+	position: fixed;
+	left: 0; top: 0;
+	width: 100%; height: 5%;
+	z-index: 10;
+}
+.pf_visual img{
+    filter: brightness(60%);
+}
+.portfolio_view_cont>.overview>.pf_info>dl dd{
+    float: right;
+    width: 60%;
+}
+.portfolio_view_cont>.overview>.pf_info>dl dd.inner{
+     line-height: 25px;
+}
+
+.section02:after{
+	background-color: #0caaa2;
+	
+}
+/* 퀵 메뉴 ----------------------------*/
+.main_quick{
+    width: 1062px;
+}
+.main_quick>ul{padding: 0;}
+.main_quick>ul>li{
+	width:88px; height: 90px;
+    transition: all 0.5s;
+    background: url(../img/icon.png) no-repeat left top!important;
+}
+.main_quick>ul>li>a>span{
+    font-size: 12px;
+	margin-top: 100px;
+}
+
+/* 퀵 메뉴 아이콘 이미지 ----------------*/
+.main_quick>ul>li.icon1{}
+.main_quick>ul>li.icon1:hover{
+    background-position: 0 -90px!important;
+}
+.main_quick>ul>li.icon2{
+    background-position: -90px 0!important;
+}
+.main_quick>ul>li.icon2:hover{
+    background-position: -90px -90px!important;
+}
+.main_quick>ul>li.icon3{
+	background-position: -180px 0!important;
+}
+.main_quick>ul>li.icon3:hover{
+	background-position: -180px -90px!important;
+}
+.main_quick>ul>li.icon4{
+	background-position: -270px 0!important;
+}
+.main_quick>ul>li.icon4:hover{
+	background-position: -270px -90px!important;
+}
+.main_quick>ul>li.icon5{
+	background-position: -360px 0!important;
+}
+.main_quick>ul>li.icon5:hover{
+	background-position: -360px -90px!important;
+}
+.main_quick>ul>li.icon6{
+	background-position: -450px 0!important;
+}
+.main_quick>ul>li.icon6:hover{
+	background-position: -450px -90px!important;
+}
+.main_quick>ul>li.icon7{
+	background-position: -540px 0!important;
+}
+.main_quick>ul>li.icon7:hover{
+	background-position: -540px -90px!important;
+}
+.main_quick>ul>li.icon8{
+	background-position: -630px 0!important;
+}
+.main_quick>ul>li.icon8:hover{
+	background-position: -630px -90px!important;
+}
+.section05{
+	padding-top: 50px;
+}
+.section05:after{
+	height: 98%;
+    background: #0fb2aa;
+}

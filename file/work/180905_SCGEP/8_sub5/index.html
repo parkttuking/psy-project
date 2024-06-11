@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>서울도시가스 Mobile</title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/lnb.css">
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>    
+
+<body style="background-color: #fff">
+    <div class="wrap">
+		<!--Header 영역 시작-->
+		<header>
+			<div class="wrap-menu">
+				<div class="btn_left" onclick="$('.lnb_menu').show();$('.lnb_bg').show();">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div><!--// btn_left -->
+				<div class="title">
+					<h1 class="Logo">서울도시가스 MOBILE</h1>
+				</div><!--// title -->
+			</div>
+		</header>
+		<!--Header 영역 종료-->
+        <ul class="lnb_menu" style="display:none;">
+                   <div class="box">
+                   <div class="lnb_title">
+                       <p>HOME</p>
+                       <a class="btn_close"  onclick="$('.lnb_menu').hide();$('.lnb_bg').hide();"><img alt="닫기" src="IMG/btn_close.png"></a>
+                   </div>
+					<ul class="menu">
+						<li class="menu_li">
+							<a href="#">
+							    <span class="mail">메일</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+                            <ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">미확인 메일</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">받은 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">내부 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">외부 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">알림 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">보낸 편지함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">확인할 메일</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">휴지통</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">폴더</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">메일작성</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="payment">전자결제</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+                            <ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">결제할 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">결제보류 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">결제진행 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">결제완료 문서</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">개인완료함</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">휴가원 작성</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="calendar">일정관리</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="address">연락처</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="Bulletin-Board">게시판</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+							<ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">최신게시</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a></a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">경조사</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">경조사&#40;과거&#41;</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">업무게시</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">업무게시&#40;과거&#41;</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">공급량 조회</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">영업마일리지</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="spec">자제사양서</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+							<ul class="submenu">
+                                <li class="submenu_li">
+							        <a href="#">자재사양서1</a>
+							    </li>
+							    <li class="submenu_li">
+							        <a href="#">자재사양서2</a>
+							    </li>
+							</ul>
+						</li>
+						<li class="menu_li">
+							<a href="#">
+							    <span class="logout">로그아웃</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+						<li class="menu_li"  onclick="$('.lnb_menu').hide();$('.lnb_bg').hide();">
+							<a href="#">
+							    <span class="close">닫기</span>
+							    <img class="next" src="IMG/next.png">
+							</a>
+						</li>
+					</ul>  
+			   </div><!--// box --> 
+		   </ul>
+        <div class="lnb_bg" style="display:none;"></div><!--// lnb_on_bg -->
+        <div class="sub_top">
+            <button class="save">저장</button><!--// send -->
+        </div><!--// sub_titlen -->
+        <div class="schedule_wrap">
+            <div class="schedule_cont">
+                <div class="schedule_Style title">
+                    <span class="tit blind">제목</span>
+                    <div class="cont">
+                        <div class="cont_inputBox">
+                            <button class="pos_impo"><img src="IMG/pos_impo_off.svg"></button>
+                            <input type="text" title="제목을 입력하세요" placeholder="제목을 입력하세요.">
+                        </div>
+                    </div>
+                </div><!--// schedule_Style title -->
+                <div class="schedule_Style Writer">
+                    <span class="tit">작성자</span>
+                    <div class="cont">
+                        <div class="cont_inputBox">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div><!--// schedule_Style -->
+                <div class="schedule_Style">
+                    <span class="tit">장소</span>
+                    <div class="cont">
+                        <div class="cont_inputBox">
+                            <input type="text" title="장소를 입력하세요" placeholder="장소를 입력하세요.">
+                        </div>
+                    </div>
+                </div><!--// schedule_Style -->
+                <div class="schedule_Style">
+                    <span class="tit">구분</span>
+                    <div class="cont">
+                        <div class="cont_inputBox">
+                            <select>
+                                <option>선택</option>
+                                <option>선택1</option>
+                                <option>선택2</option>
+                                <option>선택3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!--// schedule_Style -->
+                <div class="schedule_Style date">
+                    <span class="tit">날짜/시간</span>
+                    <div class="cont">
+                        <div class="cont_inputBox">
+                            <input type="text" class="start_date" placeholder="2018.12.25">
+                            <select class="hour">
+                                <option>00</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                            </select>
+                            <select class="minute">
+                                <option>00</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                                <option>32</option>
+                                <option>33</option>
+                                <option>34</option>
+                                <option>35</option>
+                                <option>36</option>
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                                <option>45</option>
+                                <option>46</option>
+                                <option>47</option>
+                                <option>48</option>
+                                <option>49</option>
+                                <option>50</option>
+                                <option>51</option>
+                                <option>52</option>
+                                <option>53</option>
+                                <option>54</option>
+                                <option>55</option>
+                                <option>56</option>
+                                <option>57</option>
+                                <option>58</option>
+                                <option>59</option>
+                            </select>
+                            <input type="text" class="end_date" placeholder="2018.12.25">
+                            <select class="hour">
+                                <option>00</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                            </select>
+                            <select class="minute">
+                                <option>00</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                                <option>32</option>
+                                <option>33</option>
+                                <option>34</option>
+                                <option>35</option>
+                                <option>36</option>
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                <option>40</option>
+                                <option>41</option>
+                                <option>42</option>
+                                <option>43</option>
+                                <option>44</option>
+                                <option>45</option>
+                                <option>46</option>
+                                <option>47</option>
+                                <option>48</option>
+                                <option>49</option>
+                                <option>50</option>
+                                <option>51</option>
+                                <option>52</option>
+                                <option>53</option>
+                                <option>54</option>
+                                <option>55</option>
+                                <option>56</option>
+                                <option>57</option>
+                                <option>58</option>
+                                <option>59</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!--// schedule_Style -->
+                <div class="schedule_Style file-schedule-Style">
+                    <span class="tit">첨부파일</span>
+                    <div class="cont">
+                        <div class="cont_inputBox">
+                            <ul class="file-schedule">
+                                <li>
+                                    <a href="#">
+                                        <img src="IMG/file-mail.png">
+                                        업무보고.ppt
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--// schedule_Style -->
+            </div><!--// schedule_cont -->
+        </div><!--// schedule_wrap -->
+        <div class="bottom_Bar">
+           <div class="inner">
+               <button>저장</button>
+               <button>목록으로</button>
+               <button>맨위로</button>
+           </div>
+        </div>
+    </div><!--// wrap -->
+    <script>
+		$(document).ready(function(){
+            var flag=false;
+            $(".pos_impo>img").click(function(){
+                if (flag==false) {
+                    $(".pos_impo>img").attr("src",$(".pos_impo>img").attr("src").replace("_off","_on"));
+					flag=true;
+				}
+				
+				else if(flag==true){ 
+                    $(".pos_impo>img").attr("src",$(".pos_impo>img").attr("src").replace("_on","_off"));
+					flag=false;
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

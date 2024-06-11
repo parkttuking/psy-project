@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>서울도시가스 그룹웨어 로그인</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <div class="login_Wrap">
+        <div class="bg"></div>
+        <div class="loginFormDiv">
+            <div class="left">배경</div>
+            <div class="right">
+                <form name="frm" method="post">
+                    <h1 class="logo">서울도시가스주식회사</h1>
+                    <fieldset>
+                        <legend class="blind">로그인</legend>
+                        <ul>
+                            <li>
+                               <label for="memberid" class="id">ID</label>
+                               <input type="text" name="memberid" class="text" title="아이디 입력" placeholder="ID를 입력하세요.">
+                            </li>
+                            <li>
+                                <label for="password" class="password">Password</label>
+                                <input type="password" name="password" class="text" title="비밀번호 입력" placeholder="Password를 입력하세요.">
+                            </li>
+                        </ul>
+                        <p class="saveid">
+                            <input class="saveid" type="hidden" value="false">
+                            <input id="chkSaveid" name="chkSaveid" type="checkbox" value="true" class="skip">
+                            <label for="chkSaveid"><span>아이디 저장</span></label>
+                        </p><!--// saveid -->
+                        <div class="btn_primary">
+                            <button>Login</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div><!--// loginFormDiv -->
+        <footer>COPYRIGHT© 2020 Seoul City Gas. All Rights Reserved.</footer>
+	</div><!--// login_Wrap -->
+	
+</body>
+</html>

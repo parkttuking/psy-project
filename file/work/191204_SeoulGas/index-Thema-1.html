@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>서울도시가스</title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="JS/jQuery.js"></script>
+	<script src="JS/main.js"></script>
+</head>
+<body>
+	<header>
+	    <div class="container">
+	        <div class="dwp-gnb">
+                <div class="btn">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+	        </div><!--// dwp-gnb -->
+	        <h1 class="dwp-logo">
+	            <a class="dwp-home" href="#">서울도시가스</a>
+	        </h1><!--// dwp-logo -->
+	        <div class="dwp-util">
+	            <div class="dwp-search">
+	                <div class="form">
+	                    <input type="text" placeholder="검색어를 입력해주세요" id="top-search-input" name="QueryText" title="검색하기">
+	                    <button aria-label="검색하기"></button>
+	                </div><!--// form -->
+	            </div><!--// dwp-search -->
+	            <div class="dwp-workplace">
+                    <a>Personal Place</a>
+	            </div><!--// dwp-workplace -->
+	            <div class="dwp-menu dwp-icon-wrap Thema-1">
+	                <button class="dwp-menu-mail" data-count="2">메일</button>
+	                <button class="dwp-menu-alarm" data-count="3">알림</button>
+	                <button class="dwp-menu-doc" data-count="5">문서</button>
+	                <button class="dwp-menu-apps">앱</button>
+	                <button class="dwp-menu-setting">설정</button>
+	                <div class="dwp-profile">
+                        <a>
+                            <img class="dwp-photo" src="#" alt onerror="this.src='IMG/dwp-photo.svg'">
+                        </a>
+                        <span class="dwp-name">홍길동</span>
+                    </div><!--// dwp-profile -->
+	            </div><!--// dwp-util-menu -->
+	        </div><!--// dwp-util -->
+	    </div><!--// container -->
+	</header>
+	<div id="dwp-portlet-zone" class="dwp-portlet-zone">
+        <div class="visual">
+            <img src="IMG/visual.png" alt="메인이미지">
+            <button class="Thema-1">
+                이미지 열기,닫기 버튼
+            </button><!--// blind_img -->
+        </div> <!--// visual -->
+        <div class="dwp-portlet-con">
+            <div class="dwp-portlet-line dwp-portlet-line1">
+                <div class="dwp-portlet dwp-portlet-supply">
+                    <div class="portlet-head Thema-1"> 
+                        공급량
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <ul>
+                            <li><a>◀</a></li>
+                            <li><a>2019년 09월 23일 기준</a></li>
+                            <li><a>▶</a></li>
+                        </ul>
+                        <table>
+                           <tbody>
+                               <tr>
+                                    <th style="width: 30%">구분</th>
+                                    <th>실적</th>
+                                    <th style="width: 30%">&#37;</th>
+                                </tr>
+                                <tr>
+                                    <td>전월누계</td>
+                                    <td>1,330,686,069</td>
+                                    <td>98.2</td>
+                                </tr>
+                                <tr>
+                                    <td>당일누계</td>
+                                    <td>0</td>
+                                    <td>.0</td>
+                                </tr>
+                                <tr>
+                                    <td>당월판매</td>
+                                    <td>24,097,916</td>
+                                    <td>40.4</td>
+                                </tr>
+                                <tr>
+                                    <td>당년누계</td>
+                                    <td>1,354,783,985</td>
+                                    <td>95.8</td>
+                                </tr>
+                           </tbody>
+                        </table>
+                    </div>
+                </div><!--// dwp-portlet-supply -->
+                <div class="dwp-portlet dwp-portlet-suggest">
+                    <div class="portlet-head Thema-1"> 
+                        사내제안 [현황보기] 
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                            <a><img src="IMG/more.svg" alt="더보기"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>Idea제안</th>
+                                    <th>실시제안</th>
+                                    <th>팀제안</th>
+                                    <th>소집단</th>
+                                </tr>
+                                <tr>
+                                    <td>년누계</td>
+                                    <td>119</td>
+                                    <td>67</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!--// dwp-portlet-suggest -->
+                <div class="dwp-portlet dwp-portlet-mail">
+                    <div class="portlet-head Thema-1"> 
+                        전자메일 
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                            <a><img src="IMG/more.svg" alt="더보기"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <ul>
+                            <li>
+                                <a class="mail-photo">
+                                    <img class="dwp-photo" src="#" alt onerror="this.src='IMG/dwp-photo.svg'">
+                                </a>
+                                <ul class="info">
+                                    <li class="name">이사원</li>
+                                    <li class="detail_link">매출현황 보고자료</li>
+                                    <li class="time">2019.00.00 00:00</li>
+                                </ul>
+                                <ul class="btn">
+                                    <li class="bookmark Thema-1"><a>즐기찾기</a></li>
+                                    <li class="trash"><a>휴지통</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="mail-photo">
+                                    <img class="dwp-photo" src="#" alt onerror="this.src='IMG/dwp-photo.svg'">
+                                </a>
+                                <ul class="info">
+                                    <li class="name">이사원</li>
+                                    <li class="detail_link">매출현황 보고자료</li>
+                                    <li class="time">2019.00.00 00:00</li>
+                                </ul>
+                                <ul class="btn">
+                                    <li class="bookmark Thema-1"><a>즐기찾기</a></li>
+                                    <li class="trash"><a>휴지통</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="mail-photo">
+                                    <img class="dwp-photo" src="#" alt onerror="this.src='IMG/dwp-photo.svg'">
+                                </a>
+                                <ul class="info">
+                                    <li class="name">이사원</li>
+                                    <li class="detail_link">매출현황 보고자료</li>
+                                    <li class="time">2019.00.00 00:00</li>
+                                </ul>
+                                <ul class="btn">
+                                    <li class="bookmark Thema-1"><a>즐기찾기</a></li>
+                                    <li class="trash"><a>휴지통</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="mail-photo">
+                                    <img class="dwp-photo" src="#" alt onerror="this.src='IMG/dwp-photo.svg'">
+                                </a>
+                                <ul class="info">
+                                    <li class="name">이사원</li>
+                                    <li class="detail_link">매출현황 보고자료</li>
+                                    <li class="time">2019.00.00 00:00</li>
+                                </ul>
+                                <ul class="btn">
+                                    <li class="bookmark Thema-1"><a>즐기찾기</a></li>
+                                    <li class="trash"><a>휴지통</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--// dwp-portlet-mail -->
+                <div class="dwp-portlet dwp-portlet-vpr">
+                    <div class="portlet-head Thema-1"> 
+                        My VPR
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <ul>
+                            <li class="vpr-1"><a>혁신 프로젝트</a></li>
+                            <li class="vpr-2"><a>NX4A프로젝트</a></li>
+                            <li class="vpr-3"><a>기술연구소</a></li>
+                            <li class="vpr-4"><a>ERP 프로젝트</a></li>
+                        </ul>
+                    </div>
+                </div><!--// dwp-portlet-vpr -->
+            </div><!--// dwp-portlet-line1 -->
+            <div class="dwp-portlet-line dwp-portlet-line2">
+                <div class="dwp-portlet dwp-portlet-approval">
+                    <div class="portlet-head Thema-1"> 
+                        전자결재
+                        <div class="btn">
+                            <a><img src="IMG/more.svg" alt="더보기"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <div class="tabMenu">
+                            <ul>
+                                <li class="Thema-1"><a href="#">결재할문서</a></li>
+                                <li class="Thema-1"><a href="#">결재진행문서</a></li>
+                                <li class="Thema-1"><a href="#">접수대기</a></li>
+                            </ul>
+                        </div><!--// tabMenu -->
+                        <ul class="tab-con">
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">2Q 매출 현황 보고자료 건</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="inpro Thema-1">진행</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">사내 학자금 신청</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="inpro Thema-1">진행</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">연차 정리 샘플</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="inpro Thema-1">진행</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">A 매출 현황 보고 자료</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="inpro Thema-1">진행</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">A 매출 현황 보고 자료</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="inpro Thema-1">진행</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">H1매출 현황 보고 자료</span>
+                                    <p class="time">2019.00.00 00:00</p> 
+                                    <p class="inpro Thema-1">진행</p>
+                                </a>
+                            </li>
+                        </ul><!--// tab-con -->
+                    </div>
+                </div><!--// dwp-portlet-approval -->
+                <div class="dwp-portlet dwp-portlet-knowledge dwp-portlet-board">
+                    <div class="portlet-head Thema-1"> 
+                        최신지식 
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                            <a><img src="IMG/more.svg" alt="더보기"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <ul>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">전산 Q&amp;A</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="like Thema-1 on">1</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">회의관리</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="like Thema-1">0</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--// dwp-portlet-knowledge -->
+            </div><!--// dwp-portlet-line2 -->
+            <div class="dwp-portlet-line dwp-portlet-line3">
+                <div class="dwp-portlet-util">
+                    <ul>
+                        <li>
+                            <a class="MES">
+                                <span><img src="IMG/MES.svg" alt="MES"></span>
+                                <p>MES</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="GIS">
+                                <span><img src="IMG/GIS.svg" alt="GIS"></span>
+                                <p>GIS</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="EIS">
+                                <span><img src="IMG/EIS.svg" alt="EIS"></span>
+                                <p>EIS</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="calendar">
+                                <span><img src="IMG/calendar.svg" alt="calendar"></span>
+                                <p>통합일정</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="restaurant">
+                                <span><img src="IMG/restaurant.svg" alt="restaurant"></span>
+                                <p>주간식단</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="mybookmark">
+                                <span><img src="IMG/mybookmark.svg" alt="mybookmark"></span>
+                                <p>나의<br>북마크</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--// dwp-portlet-util -->
+                <div class="dwp-portlet dwp-portlet-notice dwp-portlet-board">
+                    <div class="portlet-head Thema-1"> 
+                        공지사항
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                            <a><img src="IMG/more.svg" alt="더보기"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <ul>
+                            <li>
+                                <a>
+                                    <span class="detail_link">익명 게시도 가능합니다.</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <ul class="btn">
+                                        <li class="like Thema-1">0</li>
+                                        <li class="comment">0</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="detail_link">익명 게시도 가능합니다.</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <ul class="btn">
+                                        <li class="like Thema-1">0</li>
+                                        <li class="comment">0</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="detail_link">익명 게시도 가능합니다.</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <ul class="btn">
+                                        <li class="like Thema-1">0</li>
+                                        <li class="comment">0</li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="detail_link">익명 게시도 가능합니다.</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <ul class="btn">
+                                        <li class="like Thema-1">0</li>
+                                        <li class="comment">0</li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--// dwp-portlet-notice -->
+                <div class="dwp-portlet dwp-portlet-event dwp-portlet-board">
+                    <div class="portlet-head Thema-1"> 
+                        경조사 
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                            <a><img src="IMG/more.svg" alt="더보기"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <ul>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">8살 차이는 기본 -  나이는 숫자에 불과해</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="like Thema-1 on">1</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">8살 차이는 기본 -  나이는 숫자에 불과해</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="like Thema-1">0</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--// dwp-portlet-event -->
+                <div class="dwp-portlet dwp-portlet-board">
+                    <div class="portlet-head Thema-1"> 
+                        게시
+                        <div class="btn">
+                            <a><img src="IMG/refresh.svg" alt="새로고침"></a>
+                            <a><img src="IMG/more.svg" alt="더보기"></a>
+                        </div><!--// btn -->
+                    </div>
+                    <div class="portlet-body">
+                        <ul>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">점심메뉴 10월 1주차</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="like Thema-1 on">1</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <p class="name">이사원</p>
+                                    <span class="detail_link">점심메뉴 10월 1주차</span>
+                                    <p class="time">2019.00.00 00:00</p>
+                                    <p class="like Thema-1">0</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--// dwp-portlet-board -->
+            </div><!--// dwp-portlet-line3 -->
+        </div><!--// dwp-portlet-con -->
+    </div><!--// contents -->
+    <div id="quick-l" class="quick-l quick">
+        <ul>
+            <li>
+                <a>
+                    <img src="IMG/quick-l-1-t1.svg" alt="사내메신져 설치">
+                    <p class="txt">사내메신져<br>설치</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-l-2-t1.svg" alt="오늘의 식단">
+                    <p class="txt">오늘의 식단</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-l-3-t1.svg" alt="SCG그룹구내전화부">
+                    <p class="txt">SCG그룹<br>구내전화부</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-l-4-t1.svg" alt="서울도시가스홈페이지">
+                    <p class="txt">서울도시가스<br>홈페이지</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-l-5-t1.svg" alt="건강한쇼핑웰던몰">
+                    <p class="txt">건강한 쇼핑!<br>웰던몰</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-l-6-t1.svg" alt="알마씨엘로 커피&티">
+                    <p class="txt">알마씨엘로<br>커피&amp;티</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-l-7-t1.svg" alt="도서목록">
+                    <p class="txt">도서목록</p>
+                </a>
+            </li>
+
+        </ul>
+    </div><!--// quick-l -->
+    <div id="quick-R" class="quick-R quick">
+        <ul>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-1-t1.svg" alt="영어사전">
+                    <p class="txt">영어사전</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-2-t1.svg" alt="일본어사전">
+                    <p class="txt">일본어사전</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-3-t1.svg" alt="중국어 사전">
+                    <p class="txt">중국어 사전</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-4-t1.svg" alt="구글번역">
+                    <p class="txt">구글번역</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-5-t1.svg" alt="YTN뉴스속보">
+                    <p class="txt">YTN<br>뉴스속보</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-6-t1.svg" alt="네이버검색">
+                    <p class="txt">네이버검색</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-7-t1.svg" alt="다음검색">
+                    <p class="txt">다음검색</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-8-t1.svg" alt="올레ucloud">
+                    <p class="txt">올레ucloud</p>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="IMG/quick-R-9-t1.svg" alt="고객센터EP">
+                    <p class="txt">고객센터EP</p>
+                </a>
+            </li>
+        </ul>
+    </div><!--// quick-R -->
+    <footer>
+       <div class="inner">Copyright 2020 SeoulGas All Right Reserved.</div>
+    </footer>
+</body>
+</html>

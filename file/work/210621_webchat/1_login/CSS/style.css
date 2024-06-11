@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+html, body{
+    width: 100%; height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.msg_wrap{
+    width: 100%; height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.msg_login{
+    position: absolute;    
+    left: 50%; top: 40%;
+    transform: translate(-50%, -40%);
+    -ms-transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -40%);
+    height: 463px; width: 295px;
+}
+.msg_login>h1{
+    width: 208px; height: 83px;
+    background-image: url(../IMG/msg_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    text-indent: -99999px;
+}
+.login-form{
+    margin-top: 98px;
+}
+.login-form>form>fieldset>legend{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.login-form>form>fieldset>ul{
+    float: left;
+    width: 100%;
+}
+.login-form>form>fieldset>ul>li:nth-child(2){
+    margin-top: 33px;
+}
+.login-form>form>fieldset>ul>li>label{
+    display: block;
+    width: 100%; height: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #1073f4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+.login-form>form>fieldset>ul>li>input{
+    display: block;
+    width: 100%; height: 35px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border: none;
+    border-bottom: 1px solid #1073f4;
+    outline: none;
+    ime-mode:disabled!important;
+}
+.login-form p.saveid{
+    float: left;
+    width: 100%; height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 22px;
+}
+.login-form p.saveid label{
+    line-height: 16px;
+    display: inline-block;
+}
+.login-form p.saveid #chkSaveid{
+    height: 16px;
+    width: 16px;
+    margin-top: 3px;
+}
+.btn_primary{
+    background-color: #1073f4;
+    border: none;
+    float: left;
+    margin-top: 40px;
+    width: 100%;
+    height: 49px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn_primary:hover{
+    border: 2px solid #1073f4;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #1073f4;
+}
+.COPYRIGHT{
+    position: absolute;    
+    left: 50%; bottom: 20px;
+    transform: translate(-50%, -20px);
+    -ms-transform: translate(-50%, -20px);
+    -webkit-transform: translate(-50%, -20px);
+    font-size: 12px;
+    text-align: center;
+    width: 400px;
+    color: #898989;
+    line-height: 14px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+

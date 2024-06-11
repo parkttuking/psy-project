@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+.warp{
+	position: fixed;
+	width: 100%; height: 100%;
+	background-color: #fff;
+	background-size: cover;
+}
+header{}
+header>h1{
+	position: absolute;
+	left: 28px; top: 28px;
+	width: 10%; height: 10%;
+}
+header>h1>a{
+	display: block;
+	height: 100%; width: 100%;
+	background:
+		url(../images/Logo.png) no-repeat;
+    background-size: contain;
+	text-indent: -9999px;
+}
+header>h1>a:hover{
+	background:
+		url(../images/Logo_hover.png) no-repeat;
+    background-size: contain;
+}
+/* 상단 메뉴 -----------------------------*/
+header>nav{}
+header>nav>button{
+	position: absolute;
+	top: 35px; right: 39px; 
+	color: #0abba9;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+header>nav>.sns_box{}
+header>nav>.sns_box>.sns_F{
+	position: absolute;
+	top: 38px; right: 149px;
+	background-image: url(../images/sns_f.png);
+	background-repeat: no-repeat;
+	height: 30px; width: 31px;
+	text-indent: -9999px;
+}
+header>nav>.sns_box>.sns_F:hover{
+	background-image: url(../images/sns_f_hover.png);
+}
+header>nav>.sns_box>.sns_T{
+	position: absolute;
+	top: 38px; right: 95px;
+	background-image: url(../images/sns_t.png);
+	background-repeat: no-repeat;
+	height: 30px; width: 31px;
+	text-indent: -9999px;
+}
+header>nav>.sns_box>.sns_T:hover{
+	background-image: url(../images/sns_t_hover.png);
+}
+header>nav>.nav_box{
+	position: absolute;
+	top: 75px; right: 39px; 
+	background: url(../images/Menu_top.png) no-repeat 110px 0px;
+	margin-right: 5px;
+	display: none;
+}
+header>nav>.nav_box>ul{
+	background-color:#0abba9;
+	margin-top: 8px;
+	padding: 16px 8px;
+	
+}
+header>nav>.nav_box>ul>li{
+	margin-bottom: 5px;
+	padding: 0 0 5px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+header>nav>.nav_box>ul>li>a{
+	font-size: 15px;
+	color: white;
+}
+
+/* container 중앙 이미지-------------------*/
+.container{}
+.container>.txt{
+	position: absolute;
+	top: 30%; left:12%;
+	z-index: 10px;
+    width: 60%; height: auto;
+}
+.container>.prodct{
+	position: absolute;
+	top: 10%; right: 12%;
+	z-index: 100;
+    width: 24%;
+}
+/* 메인 버튼 2 개 --------------------------*/
+.container{}
+.container>.btnSet{
+	position: absolute;
+    bottom:32%; left: 45%;
+    transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    -webkit-transform: translateX(-45%);
+
+	float: left;
+	z-index: 30;
+}
+.container>.btnSet>li{
+	width: 262px; height: 48px;
+	background-color:#0abba9;
+	float: left;
+	text-align: center;
+	line-height: 46px;
+	margin-right: 19px;
+}
+.container>.btnSet>li:hover{
+	background-color: #fff;
+	border: 2px solid #0abba9;
+	box-sizing: border-box;
+	line-height: 44px;
+	
+}
+.container>.btnSet>li>a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+.container>.btnSet>li:hover>a{
+	color: #0abba9;
+}
+/* 푸터 ----------------------------------*/
+footer{
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+	background-color: #0abba9;
+	color: #fff;
+}
+footer>P,
+footer .footer_info,
+footer .footer_info address,
+footer .footer_info p{float: left;}
+footer{
+	height: 40px;
+}
+footer>P{
+	height: 29px; width:80px; 
+	background-image: url(../images/Logo_footer.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.6;
+	text-indent: -9999px;
+	margin: 8px;
+}
+footer .footer_info{
+	line-height: 40px;
+	opacity: 0.8;
+}
+footer .footer_info address{
+	padding-right: 10px;
+}
+footer .footer_info p{}
+footer .sns{
+	opacity: 0.8;
+	float: right; 
+	line-height: 40px;
+	margin-right: 10px;
+}
+footer .sns a{
+	float: right; color: #fff;
+	margin-left: 5px;
+}
+/* 팝업창 1 ---------------------------*/
+.con1{
+	position: absolute;
+	width: 65%; height: 73%;
+	padding: 5px;
+	top: 10%; left: 45%; 
+    transform: translateX(-45%);
+    -ms-transform: translateX(-45%);
+    -webkit-transform: translateX(-45%);
+	z-index: 40;
+	display: none;
+}
+.con1>.top{
+	width: 0; height: 5px;
+	background-color: #0abba9;
+	position: absolute;
+	top: 0; left: 0;
+}
+.con1>.right{
+	width: 5px; height: 0%;
+	background-color: #0abba9;
+	position: absolute;
+	top: 0; right:0;
+}
+.con1>.bottom{
+	width: 0%; height: 5px;
+	background-color: #0abba9;
+	position: absolute;
+	bottom: 0; right:0;
+}
+.con1>.left{
+	width: 5px; height: 0%;
+	background-color: #0abba9;
+	position: absolute;
+	bottom: 0; left: 0;
+}
+.con1>.content{
+	display: none;
+	background-color: #000000;
+	width: 100%; height: 100%;
+    overflow: hidden;
+}
+.con1>.content>a{
+	display: block;
+    width: 30px;
+    padding: 5px;
+}
+.con1>.content>a>img{
+    height: 30px;
+    width: 30px;
+    
+}
+
+/* 팝업창 2 ---------------------------*/
+.con2{
+	position: absolute;
+	width: 100%; height: 60%;
+	background-color: #0abba9;
+	top: 18%;
+	z-index: 40;
+	display: none;
+}
+.con2 .content2{
+	position: relative;
+	height: 100%; width:100%;
+	margin: 0 auto;
+}
+.con2>.content2>.btn_close{
+	position: absolute;
+	top: 30px; left: 20px;
+    overflow: hidden;
+}
+.con2>.content2>.btn_close>img{
+    height: 30px;
+    width: 30px;
+}
+.con2>.content2>div{
+	float: left;
+}
+.con2>.content2>div>strong{
+	display: block;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 38px;
+}
+.con2>.content2>.con2_box1{
+	position: absolute;
+	top: 17%;
+	left: 5%;
+    width: 43%; height: 70%;
+}
+.con2>.content2>.con2_box1>ul{
+    box-sizing: border-box;
+	overflow: hidden;
+    margin: 0 auto;
+}
+.con2>.content2>.con2_box1>ul>li{
+	float: left;
+    width: 16.6666666%;
+}
+.con2>.content2>.con2_box1>ul>li img{
+    width: 100%;
+    margin: 0 auto;
+}
+.con2>.content2>.con2_box1>ul>li>strong{
+	display: block;
+	color: #fff;
+}
+.con2>.content2>.con2_box1>ul>li>p{
+	color: #fff;
+}
+.con2>.content2>.con2_box2{
+	position: absolute;
+	top: 17%;
+	left: 52%;
+}
+.con2>.content2>.con2_box2>p{
+	font-size: 15px;
+	color: #fff;
+	line-height: 17px;
+}
+
+
+
+
+
+
+

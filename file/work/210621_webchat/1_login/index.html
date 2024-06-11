@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title> 타이틀 제목 </title>
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="msg_wrap">
+        <div class="msg_login">
+            <h1>메신저 로고</h1>
+            <div class="login-form">
+                <form name="frm" method="post">
+                    <fieldset>
+                        <legend>로그인</legend>
+                        <ul>
+                            <li>
+                                <label for="memberid">ID</label>
+                                <input type="text" name="memberid" class="text chkEngNo" title=" 아이디입력" placeholder="" id="chkEngNo">
+                            </li>
+                            <li>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="password" class="text chkEngNo" title="비밀번호 입력" placeholder="">
+                            </li>
+                        </ul>
+                        <p class="saveid">
+                           <input class="saveid" type="hidden" value="false">
+                           <input id="chkSaveid" name="chkSaveid" type="checkbox" value="true" class="skip">
+                           <label for="chkSaveid">아이디 저장</label>
+                        </p>
+                        <input type="submit" class="btn_primary" id="btnLogin" value="LOGIN">
+                    </fieldset>
+                </form>
+            </div>
+        </div><!--// msg_login -->
+        <p class="COPYRIGHT">본사이트는 권한이 있는 사용자만 접근할 수 있습니다.<br>권한이 없는 사용자가 불법으로 접근할 경우 법에 의해 처벌 받을 수 있습니다.</p>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+  //한글입력 안되게 처리
+  $(".chkEngNo").keyup(function(event){ 
+   if (!(event.keyCode >=37 && event.keyCode<=40)) {
+    var inputVal = $(this).val();
+    $(this).val(inputVal.replace(/[^a-z0-9]/gi,''));
+   }
+  });
+});
+
+</script>
+</html>
